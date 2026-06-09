@@ -1,0 +1,35 @@
+---
+const benefits = [
+  { title: 'Harga Kompetitif', desc: 'Harga terbaik di Denpasar dengan kualitas original.', icon: 'ri-money-dollar-circle-line' },
+  { title: 'Garansi Resmi', desc: 'Semua produk bergaransi resmi distributor.', icon: 'ri-shield-check-line' },
+  { title: 'Layanan Cepat', desc: 'Respon cepat via WA dan telepon. Siap kirim/jemput.', icon: 'ri-flashlight-line' },
+  { title: 'Teknisi Berpengalaman', desc: 'Ditenagai teknisi berpengalaman lebih dari 5 tahun.', icon: 'ri-tools-line' },
+  { title: 'Konsultasi Gratis', desc: 'Konsultasi kebutuhan komputer & laptop GRATIS.', icon: 'ri-lightbulb-line' },
+  { title: 'Pembayaran Fleksibel', desc: 'Transfer, cash, atau cicilan untuk harga tertentu.', icon: 'ri-bank-card-line' },
+];
+---
+
+<section class="bg-white">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+    <div class="text-center mb-14">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-baseText">Mengapa Memilih Kami</h2>
+      <p class="mt-4 text-lg text-subText">Keunggulan yang membuat Anda percaya</p>
+    </div>
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {benefits.map((item) => (
+        <div
+          key={item.title}
+          class="flex items-start gap-4 rounded-2xl bg-muted p-6 border border-line hover:border-nvidia/40 hover:shadow-md transition-all duration-200"
+        >
+          <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-white border border-line">
+            <i class="{item.icon} text-2xl text-emerald-600"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-baseText">{item.title}</h3>
+            <p class="mt-1 text-subText text-sm leading-relaxed">{item.desc}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

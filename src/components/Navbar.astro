@@ -1,0 +1,39 @@
+---
+const nav = [
+  { name: 'Beranda', href: '#' },
+  { name: 'Produk', href: '#produk' },
+  { name: 'Layanan', href: '#layanan' },
+  { name: 'Merk', href: '#merk' },
+  { name: 'Kontak', href: '#kontak' },
+];
+---
+
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
+  <nav class="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
+        <a href="#" class="flex items-center gap-2.5">
+          <div class="h-9 w-9 rounded bg-emerald-500 text-white grid place-items-center font-extrabold text-sm tracking-tight">MCB</div>
+          <div>
+            <span class="text-[15px] font-extrabold text-slate-900 leading-none">Media Computer Bali</span>
+          </div>
+        </a>
+
+    <div class="hidden md:flex items-center gap-8">
+      {nav.map((item) => (
+        <a
+          href={item.href}
+          class="text-[13px] font-semibold text-slate-600 hover:text-slate-900 transition-colors"
+        >
+          {item.name}
+        </a>
+      ))}
+      <a
+        href="https://wa.me/6285738627984"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-[13px] font-extrabold px-5 py-2.5 transition-colors"
+      >
+        Chat WA
+      </a>
+    </div>
+  </nav>
+</header>

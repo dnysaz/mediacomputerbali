@@ -1,0 +1,47 @@
+---
+const products = [
+  { name: 'PC Gaming Rakitan', category: 'Rakitan PC', desc: 'Konfigurasi sesuai kebutuhan dan budget', price: 'Mulai Rp 5jt', color: 'from-nvidia to-emerald-700' },
+  { name: 'Laptop', category: 'Laptop', desc: 'Baru & segel, berbagai varian tersedia', price: 'Mulai Rp 4jt', color: 'from-amd to-red-700' },
+  { name: 'Printer HP & Epson', category: 'Printer', desc: 'Berbagai tipe untuk rumah dan kantor', price: 'Mulai Rp 1jt', color: 'from-gold to-amber-600' },
+  { name: 'Mouse, Keyboard, RGB', category: 'Aksesoris', desc: 'Gaming dan kantor original', price: 'Mulai Rp 100rb', color: 'from-emerald-500 to-nvidia' },
+];
+
+---
+
+<section id="produk" class="bg-dark-900">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+    <div class="text-center mb-14">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Produk Unggulan Kami</h2>
+      <p class="mt-4 text-lg text-gray-400 max-w-2xl mx-auto">Berkualitas original, bergaransi, dan harga bersaing</p>
+    </div>
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      {products.map((item) => (
+        <div
+          key={item.name}
+          class="group rounded-2xl bg-dark-800 shadow-xl ring-1 ring-dark-700 hover:-translate-y-1 hover:shadow-2xl hover:shadow-nvidia/5 hover:ring-nvidia/30 transition-all duration-300 overflow-hidden"
+        >
+          <div class={`h-40 bg-gradient-to-br ${item.color} flex items-center justify-center`}>
+            {item.category === 'Rakitan PC' && <i class="ri-tv-2-line text-5xl text-white/90"></i>}
+            {item.category === 'Laptop' && <i class="ri-macbook-line text-5xl text-white/90"></i>}
+            {item.category === 'Printer' && <i class="ri-printer-line text-5xl text-white/90"></i>}
+            {item.category === 'Aksesoris' && <i class="ri-gamepad-line text-5xl text-white/90"></i>}
+          </div>
+          <div class="p-5">
+            <p class="text-xs font-bold text-nvidia uppercase tracking-wider">{item.category}</p>
+            <h3 class="mt-1 text-lg font-bold text-white">{item.name}</h3>
+            <p class="mt-2 text-gray-400">{item.desc}</p>
+            <p class="mt-4 text-sm font-semibold text-amd">{item.price}</p>
+            <a
+              href="https://wa.me/6285738627984?text=Halo%20Admin%2C%20saya%20mau%20konsultasi%20rakit%20pc%20atau%20laptop%20baru%20bisa%3F"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-dark-700 px-4 py-2.5 text-sm font-semibold text-white hover:bg-nvidia transition-colors"
+            >
+              Tanya Info
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

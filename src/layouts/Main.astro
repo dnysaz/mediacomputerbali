@@ -1,0 +1,34 @@
+---
+const seo = Astro.props.seo ?? {};
+const title = Astro.props.title ?? 'Media Computer Bali';
+---
+
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="description" content={seo.description ?? 'Media Computer Bali - Toko Komputer, Laptop, Rakitan PC & Jasa Instalasi Denpasar Bali'} />
+    <meta name="theme-color" content="#10b981" />
+    <link rel="canonical" href={seo.canonical} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={seo.openGraph?.url} />
+    <meta property="og:title" content={seo.openGraph?.title ?? title} />
+    <meta property="og:description" content={seo.openGraph?.description ?? seo.description} />
+    {seo.openGraph?.images && seo.openGraph.images[0] && (
+      <meta property="og:image" content={seo.openGraph.images[0].url} />
+    )}
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={seo.twitter?.title ?? title} />
+    <meta name="twitter:description" content={seo.twitter?.description ?? seo.description} />
+
+    <script type="application/ld+json" set:html={JSON.stringify(seo.jsonLd)} />
+    <title>{title}</title>
+  </head>
+  <body class="bg-white text-baseText font-sans antialiased">
+    <slot />
+  </body>
+</html>

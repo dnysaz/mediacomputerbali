@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="description" content="Media Computer Bali - Rakit PC Gaming Design Arsitek. Spesialis jual laptop baru, rakitan PC gaming, aksesaris komputer, printer, dan jasa instalasi software di Denpasar. Harga kompetitif, garansi resmi, bisa jemput atau kirim." />
+    <meta name="keywords" content="toko komputer Bali, laptop Denpasar, rakitan PC gaming, aksesaris komputer, printer Denpasar, jasa instalasi software, toko laptop Bali, computer shop Denpasar, Media Computer Bali" />
+    <meta name="author" content="Media Computer Bali" />
+    <meta name="theme-color" content="#059669" />
+    <link rel="canonical" href="https://mediacomputerbali.com" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mediacomputerbali.com" />
+    <meta property="og:title" content="Media Computer Bali - Toko Komputer & Laptop Terpercaya Denpasar Bali" />
+    <meta property="og:description" content="Rakit PC Gaming Design Arsitek. Spesialis laptop baru, PC gaming, aksesaris, printer, dan jasa instalasi software di Denpasar Bali. Harga kompetitif, garansi resmi." />
+    <meta property="og:image" content="https://mediacomputerbali.com/og-image.jpg" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:site_name" content="Media Computer Bali" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Media Computer Bali - Toko Komputer Denpasar" />
+    <meta name="twitter:description" content="Rakit PC Gaming Design Arsitek. Toko komputer terpercaya Denpasar: laptop, PC gaming, aksesaris, printer, jasa instalasi software." />
+    <meta name="twitter:image" content="https://mediacomputerbali.com/og-image.jpg" />
+
+    <script type="application/ld+json" is:inline>
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Media Computer Bali",
+        "description": "Media Computer Bali - Rakit PC Gaming Design Arsitek. Toko komputer, laptop, rakitan PC, aksesaris, printer, dan jasa instalasi software di Denpasar Bali",
+        "url": "https://mediacomputerbali.com",
+        "telephone": "+6285738627984",
+        "email": "mediacomputerbali@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Jl. Gatot Subroto Gg. Turi Permai No 26",
+          "addressLocality": "Denpasar",
+          "addressRegion": "Bali",
+          "addressCountry": "ID",
+          "postalCode": "80234"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -8.650000,
+          "longitude": 115.216667
+        },
+        "openingHours": ["Mo-Sa 10:00-19:00", "Su 10:00-17:00"],
+        "priceRange": "Rp",
+        "areaServed": {
+          "@type": "City",
+          "name": "Denpasar"
+        },
+        "makesOffer": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Rakitan PC Custom"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Laptop Baru"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Printer"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Aksesaris Komputer"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Instalasi Software"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Servis & Perbaikan Laptop/PC"}}
+        ]
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <style is:global>
+      html { scroll-behavior: smooth; overflow-x: hidden; }
+      body {
+        margin: 0;
+        font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-weight: 500;
+        overflow-x: hidden;
+      }
+
+      @keyframes marquee {
+        0% { transform: translate3d(0,0,0); }
+        100% { transform: translate3d(-50%,0,0); }
+      }
+      .animate-marquee {
+        display: flex;
+        gap: 1rem;
+        width: max-content;
+        animation: marquee 32s linear infinite;
+      }
+      .animate-marquee:hover,
+      .animate-marquee:focus-within {
+        animation-play-state: paused;
+      }
+
+      @keyframes fade-up {
+        0% { opacity: 0; transform: translateY(28px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      .reveal {
+        opacity: 0;
+        transform: translateY(28px);
+        transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @keyframes pulse-glow {
+        0%, 100% { box-shadow: 0 0 20px rgba(5, 150, 105, 0.15); }
+        50% { box-shadow: 0 0 40px rgba(5, 150, 105, 0.3); }
+      }
+      .glow-pulse {
+        animation: pulse-glow 3s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-8px); }
+      }
+      .float-anim {
+        animation: float 4s ease-in-out infinite;
+      }
+      .float-anim-delayed {
+        animation: float 4s ease-in-out 1.5s infinite;
+      }
+
+      .gradient-text {
+        background: linear-gradient(135deg, #059669 0%, #10b981 50%, #34d399 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .mobile-menu-open {
+        transform: translateX(0) !important;
+        opacity: 1 !important;
+      }
+
+      .card-shine {
+        position: relative;
+        overflow: hidden;
+      }
+      .card-shine::after {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(45deg, transparent 40%, rgba(255,255,255,0.06) 50%, transparent 60%);
+        transform: translateX(-100%);
+        transition: transform 0.8s ease;
+      }
+      .card-shine:hover::after {
+        transform: translateX(100%);
+      }
+    </style>
+    <title>Media Computer Bali - Toko Komputer, Laptop & Rakitan PC Denpasar | Harga Kompetitif</title>
+  </head>
+
+  <body class="bg-white text-slate-800 antialiased">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 inset-x-0 z-50 bg-white/85 backdrop-blur-xl border-b border-slate-200/80">
+      <div class="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
+        <a href="#" class="flex items-center gap-2.5 group">
+          <div class="h-9 w-9 rounded-lg bg-gradient-to-br from-emerald-500 to-emerald-700 text-white grid place-items-center font-extrabold text-sm tracking-tight shadow-sm transition-transform group-hover:scale-105">MCB</div>
+          <span class="text-[15px] font-extrabold text-slate-900 leading-none">Media Computer Bali</span>
+        </a>
+
+        <div class="hidden md:flex items-center gap-3">
+          <a href="#produk" class="text-[13px] font-semibold text-slate-600 hover:text-emerald-600 transition-colors relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[2px] after:bg-emerald-500 after:transition-all hover:after:w-full" data-i18n="nav.produk">Produk</a>
+          <a href="#layanan" class="text-[13px] font-semibold text-slate-600 hover:text-emerald-600 transition-colors relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[2px] after:bg-emerald-500 after:transition-all hover:after:w-full" data-i18n="nav.layanan">Layanan</a>
+          <a href="#brands" class="text-[13px] font-semibold text-slate-600 hover:text-emerald-600 transition-colors relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[2px] after:bg-emerald-500 after:transition-all hover:after:w-full" data-i18n="nav.brands">Brands</a>
+          <a href="#kontak" class="text-[13px] font-semibold text-slate-600 hover:text-emerald-600 transition-colors relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[2px] after:bg-emerald-500 after:transition-all hover:after:w-full" data-i18n="nav.kontak">Kontak</a>
+          <button id="lang-toggle" class="h-9 w-9 rounded-lg border border-slate-200 text-slate-600 hover:bg-emerald-50 hover:text-emerald-600 hover:border-emerald-200 transition-all text-xs font-extrabold" aria-label="Toggle language">EN</button>
+          <a href="https://wa.me/6285738627984?text=Halo%20Admin%2C%20saya%20mau%20konsultasi%20rakit%20pc%20atau%20laptop%20baru%20bisa%3F" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-700 hover:to-emerald-600 text-white text-[13px] font-extrabold px-5 py-2.5 rounded-lg transition-all shadow-md hover:shadow-lg hover:shadow-emerald-500/25 active:scale-95">
+            <i class="ri-whatsapp-fill text-sm"></i>
+            <span data-i18n="nav.chatWa">Chat WA</span>
+          </a>
+        </div>
+
+        <button id="menu-btn" class="md:hidden relative z-50 inline-flex items-center justify-center h-10 w-10 rounded-lg border border-slate-200 text-slate-700 hover:bg-slate-100 transition-colors" aria-label="Menu">
+          <i id="menu-icon" class="ri-menu-line text-xl"></i>
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="md:hidden fixed inset-0 z-40 bg-white/95 backdrop-blur-lg translate-x-full opacity-0 transition-all duration-300 ease-in-out">
+        <div class="flex flex-col items-center justify-center h-full gap-6 text-center">
+          <a href="#produk" class="text-2xl font-bold text-slate-800 hover:text-emerald-600 transition-colors" data-i18n="nav.produk">Produk</a>
+          <a href="#layanan" class="text-2xl font-bold text-slate-800 hover:text-emerald-600 transition-colors" data-i18n="nav.layanan">Layanan</a>
+          <a href="#merk" class="text-2xl font-bold text-slate-800 hover:text-emerald-600 transition-colors" data-i18n="nav.brands">Merk</a>
+          <a href="#kontak" class="text-2xl font-bold text-slate-800 hover:text-emerald-600 transition-colors" data-i18n="nav.kontak">Kontak</a>
+          <div class="h-px w-20 bg-slate-200 my-2"></div>
+          <button id="lang-toggle-mobile" class="inline-flex items-center gap-2 rounded-xl border border-slate-200 text-slate-700 px-6 py-3 text-xs font-extrabold hover:bg-emerald-50 hover:text-emerald-600 hover:border-emerald-200 transition-all">EN</button>
+          <a href="https://wa.me/6285738627984?text=Halo%20Admin%2C%20saya%20mau%20konsultasi%20rakit%20pc%20atau%20laptop%20baru%20bisa%3F" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-500 text-white text-base font-extrabold px-8 py-3.5 shadow-lg">
+            <i class="ri-whatsapp-fill text-lg"></i>
+            <span data-i18n="nav.chatWa">Chat WA</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="pt-16">
+
+      <!-- HERO -->
+      <section id="hero" class="relative min-h-[90vh] flex items-center border-b border-slate-200 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-emerald-50/30" aria-hidden="true" style="background-image: url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23059669' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\"));"></div>
+        <div class="absolute top-1/4 right-0 -mt-16 -mr-16 h-96 w-96 rounded-full bg-emerald-200/30 blur-[100px] animate-pulse" aria-hidden="true" style="animation-duration:5s"></div>
+        <div class="absolute bottom-0 left-0 -mb-20 -ml-20 h-80 w-80 rounded-full bg-blue-200/25 blur-[100px]" aria-hidden="true"></div>
+        <div class="absolute top-1/2 right-1/3 h-40 w-40 rounded-full bg-amber-200/20 blur-[80px] animate-pulse" aria-hidden="true" style="animation-duration:7s"></div>
+
+        <div class="absolute inset-0 overflow-hidden pointer-events-none hidden lg:block" aria-hidden="true">
+          <div class="absolute top-[15%] right-[8%] float-icon" style="animation: float 5s ease-in-out infinite">
+            <div class="h-14 w-14 rounded-2xl bg-white/70 backdrop-blur border border-slate-200/60 shadow-lg flex items-center justify-center text-emerald-500 rotate-12">
+              <i class="ri-cpu-line text-2xl"></i>
+            </div>
+          </div>
+          <div class="absolute top-[40%] right-[3%] float-icon" style="animation: float 6s ease-in-out 1s infinite">
+            <div class="h-12 w-12 rounded-xl bg-white/70 backdrop-blur border border-slate-200/60 shadow-md flex items-center justify-center text-emerald-500 -rotate-6">
+              <i class="ri-monitor-line text-xl"></i>
+            </div>
+          </div>
+          <div class="absolute top-[60%] right-[12%] float-icon" style="animation: float 4.5s ease-in-out 0.5s infinite">
+            <div class="h-10 w-10 rounded-lg bg-white/70 backdrop-blur border border-slate-200/60 shadow-md flex items-center justify-center text-emerald-500 rotate-6">
+              <i class="ri-code-line text-lg"></i>
+            </div>
+          </div>
+          <div class="absolute top-[25%] right-[22%] float-icon" style="animation: float 5.5s ease-in-out 2s infinite">
+            <div class="h-10 w-10 rounded-lg bg-white/70 backdrop-blur border border-slate-200/60 shadow-md flex items-center justify-center text-emerald-500">
+              <i class="ri-wifi-line text-lg"></i>
+            </div>
+          </div>
+          <div class="absolute top-[55%] right-[22%] float-icon" style="animation: float 7s ease-in-out 0.2s infinite">
+            <div class="h-9 w-9 rounded-lg bg-white/70 backdrop-blur border border-slate-200/60 shadow-md flex items-center justify-center text-emerald-500 rotate-12">
+              <i class="ri-brain-line text-base"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative mx-auto max-w-7xl px-6 w-full">
+          <div class="flex flex-col lg:flex-row lg:items-center lg:gap-16">
+
+            <div class="flex-1 pt-16 pb-12 sm:pt-24 sm:pb-20 lg:py-28 text-center lg:text-left">
+
+              <div class="reveal">
+                  <span class="inline-flex items-center gap-2 rounded-full bg-emerald-50 border border-emerald-200/60 px-4 py-1.5 text-xs font-bold text-emerald-700 mb-6 shadow-sm">
+                    <span class="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                    <span data-i18n="hero.badge">Spesialis Rakit PC Gaming & Design Arsitek</span>
+                  </span>
+              </div>
+
+              <div class="reveal" style="transition-delay:0.1s">
+                <h1 class="text-[clamp(2.5rem,6vw,4.5rem)] font-extrabold tracking-tight text-slate-900 leading-[1.08]">
+                  <span data-i18n="hero.title1">Komputer &amp; Laptop</span>
+                  <br />
+                  <span class="gradient-text" data-i18n="hero.title2">Terpercaya</span> <span class="" data-i18n="hero.preposition">di</span>
+                  <span class="gradient-text" data-i18n="hero.title3">Bali</span>
+                </h1>
+              </div>
+
+              <div class="reveal" style="transition-delay:0.2s">
+                <p class="mt-6 text-base sm:text-lg text-slate-500 max-w-xl leading-relaxed" data-i18n="hero.desc">
+                  Jual baru, rakitan PC, aksesaris, printer, dan jasa instalasi software.
+                  Bisa dijemput atau dikirim ke rumah dengan ongkir kompetitif.
+                </p>
+              </div>
+
+              <div class="reveal" style="transition-delay:0.3s">
+                <div class="mt-10 flex flex-wrap items-center gap-4 justify-center lg:justify-start">
+                  <a href="https://wa.me/6285738627984?text=Halo%20Admin%2C%20saya%20mau%20konsultasi%20rakit%20pc%20atau%20laptop%20baru%20bisa%3F" target="_blank" rel="noopener" class="group inline-flex items-center gap-2.5 rounded-xl bg-gradient-to-r from-slate-900 to-slate-800 text-white px-8 py-4 text-sm font-bold hover:from-slate-800 hover:to-slate-700 transition-all shadow-lg hover:shadow-xl hover:shadow-slate-900/20 active:scale-[0.97]">
+                    <span data-i18n="hero.btnKonsultasi">Konsultasi Gratis</span>
+                    <i class="ri-arrow-right-line text-base transition-transform group-hover:translate-x-1"></i>
+                  </a>
+                  <a href="#kontak" class="group inline-flex items-center gap-2.5 rounded-xl bg-white text-slate-700 px-8 py-4 text-sm font-bold ring-1 ring-slate-200 hover:ring-slate-300 hover:shadow-lg transition-all active:scale-[0.97]">
+                    <i class="ri-map-pin-2-line text-base"></i>
+                    <span data-i18n="hero.btnLokasi">Lihat Lokasi</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="reveal" style="transition-delay:0.4s">
+                <div class="mt-16 grid grid-cols-2 gap-3 sm:flex sm:gap-6 justify-center lg:justify-start">
+                  <div class="rounded-xl bg-white/70 backdrop-blur border border-slate-200/60 px-5 py-4 text-center sm:text-left hover:shadow-md hover:border-emerald-200/50 transition-all">
+                    <p class="text-2xl sm:text-3xl font-extrabold text-slate-900">10+</p>
+                    <p class="text-[11px] font-bold text-slate-500 mt-0.5" data-i18n="hero.stat1Label">Tahun Pengalaman</p>
+                  </div>
+                  <div class="rounded-xl bg-white/70 backdrop-blur border border-slate-200/60 px-5 py-4 text-center sm:text-left hover:shadow-md hover:border-emerald-200/50 transition-all">
+                    <p class="text-2xl sm:text-3xl font-extrabold text-slate-900">5.000+</p>
+                    <p class="text-[11px] font-bold text-slate-500 mt-0.5" data-i18n="hero.stat2Label">Pelanggan Puas</p>
+                  </div>
+                  <div class="rounded-xl bg-white/70 backdrop-blur border border-slate-200/60 px-5 py-4 text-center sm:text-left hover:shadow-md hover:border-emerald-200/50 transition-all">
+                    <p class="text-2xl sm:text-3xl font-extrabold text-slate-900">1.200+</p>
+                    <p class="text-[11px] font-bold text-slate-500 mt-0.5" data-i18n="hero.stat3Label">PC Dirakit</p>
+                  </div>
+                  <div class="rounded-xl bg-white/70 backdrop-blur border border-slate-200/60 px-5 py-4 text-center sm:text-left hover:shadow-md hover:border-emerald-200/50 transition-all">
+                    <p class="text-2xl sm:text-3xl font-extrabold text-slate-900">3.000+</p>
+                    <p class="text-[11px] font-bold text-slate-500 mt-0.5" data-i18n="hero.stat4Label">Kasus Servis</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hidden lg:flex flex-1 items-center justify-center relative py-12" aria-hidden="true">
+              <div class="relative w-full max-w-[420px] aspect-square">
+                <div class="absolute inset-0 bg-gradient-to-br from-emerald-400/20 via-emerald-500/10 to-emerald-600/20 rounded-full blur-2xl animate-pulse" style="animation-duration:4s"></div>
+                <div class="relative w-full h-full flex items-center justify-center">
+                  <div class="absolute inset-[8%] rounded-full border-2 border-dashed border-emerald-200/40 animate-spin" style="animation-duration:30s"></div>
+                  <div class="absolute inset-[15%] rounded-full bg-gradient-to-br from-emerald-500/10 to-emerald-600/5 backdrop-blur border border-emerald-200/30 shadow-2xl"></div>
+                  <div class="absolute inset-[20%] flex items-center justify-center">
+                    <div class="text-center">
+                      <div class="h-24 w-24 mx-auto rounded-3xl bg-gradient-to-br from-emerald-500 to-emerald-600 shadow-2xl shadow-emerald-500/30 flex items-center justify-center float-anim">
+                        <i class="ri-tv-2-line text-4xl text-white"></i>
+                      </div>
+                      <p class="mt-4 text-xs font-bold text-slate-400 uppercase tracking-widest" data-i18n="hero.visualLabel">PC Gaming &amp; Design</p>
+                    </div>
+                  </div>
+                  <div class="absolute top-[6%] right-[8%] h-12 w-12 rounded-xl bg-white/80 backdrop-blur border border-slate-200/60 shadow-lg flex items-center justify-center text-emerald-500 float-anim" style="animation-delay:0.5s">
+                    <i class="ri-cpu-line text-xl"></i>
+                  </div>
+                  <div class="absolute bottom-[10%] left-[5%] h-10 w-10 rounded-lg bg-white/80 backdrop-blur border border-slate-200/60 shadow-md flex items-center justify-center text-emerald-500 float-anim" style="animation-delay:1s">
+                    <i class="ri-macbook-line text-lg"></i>
+                  </div>
+                  <div class="absolute top-[20%] left-[4%] h-9 w-9 rounded-lg bg-white/80 backdrop-blur border border-slate-200/60 shadow-md flex items-center justify-center text-emerald-500 float-anim" style="animation-delay:1.5s">
+                    <i class="ri-printer-line text-base"></i>
+                  </div>
+                  <div class="absolute bottom-[20%] right-[4%] h-9 w-9 rounded-lg bg-white/80 backdrop-blur border border-slate-200/60 shadow-md flex items-center justify-center text-emerald-500 float-anim" style="animation-delay:2s">
+                    <i class="ri-mouse-line text-base"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- PRODUK -->
+      <section id="produk" class="bg-white">
+        <div class="mx-auto max-w-7xl px-6 py-20 sm:py-28">
+          <div class="text-center mb-16">
+            <div class="reveal">
+              <span class="inline-flex items-center gap-2 rounded-full bg-emerald-50 border border-emerald-200/60 px-4 py-1.5 text-xs font-bold text-emerald-700 mb-3">
+                <i class="ri-store-2-line text-xs"></i>
+                <span data-i18n="produk.badge">Produk</span>
+              </span>
+              <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3" data-i18n="produk.title">Unggulan Kami</h2>
+              <p class="mt-3 text-slate-500 max-w-xl mx-auto" data-i18n="produk.desc">Berkualitas original, bergaransi, dan harga bersaing</p>
+            </div>
+          </div>
+
+          <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <!-- PC Gaming -->
+            <div class="reveal group card-shine rounded-2xl border border-slate-200 bg-white hover:shadow-2xl hover:shadow-emerald-500/5 hover:-translate-y-1.5 hover:border-emerald-200/60 transition-all duration-300">
+              <div class="h-40 bg-gradient-to-br from-emerald-50 to-emerald-100/50 flex items-center justify-center border-b border-slate-100">
+                <div class="h-16 w-16 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-lg shadow-emerald-500/20 group-hover:scale-110 transition-transform duration-300">
+                  <i class="ri-tv-2-line text-2xl text-white"></i>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-[11px] font-bold text-emerald-600 uppercase tracking-wider mb-1" data-i18n="produk.pcLabel">Rakitan PC</p>
+                <h3 class="text-base font-extrabold text-slate-900" data-i18n="produk.pcTitle">PC Gaming Rakitan</h3>
+                <p class="text-xs text-slate-500 mt-1.5 leading-relaxed" data-i18n="produk.pcDesc">Konfigurasi sesuai kebutuhan dan budget Anda.</p>
+                <div class="flex items-center justify-between mt-5 pt-4 border-t border-slate-100">
+                  <span class="inline-flex items-center rounded-full bg-emerald-50 px-3 py-1 text-[13px] font-extrabold text-emerald-600" data-i18n="produk.pcPrice">Mulai Rp 5jt</span>
+                    <a href="https://wa.me/6285738627984?text=Halo%20Admin%2C%20saya%20mau%20konsultasi%20rakit%20pc%20atau%20laptop%20baru%20bisa%3F" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-[12px] font-extrabold text-slate-900 hover:text-emerald-600 transition-colors group/tanya">
+                      <span data-i18n="produk.tanya">Tanya</span>
+                      <i class="ri-arrow-right-up-line text-sm transition-transform group-hover/tanya:translate-x-0.5 group-hover/tanya:-translate-y-0.5"></i>
+                    </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Laptop -->
+            <div class="reveal group card-shine rounded-2xl border border-slate-200 bg-white hover:shadow-2xl hover:shadow-emerald-500/5 hover:-translate-y-1.5 hover:border-emerald-200/60 transition-all duration-300" style="transition-delay:0.05s">
+              <div class="h-40 bg-gradient-to-br from-emerald-50 to-emerald-100/50 flex items-center justify-center border-b border-slate-100">
+                <div class="h-16 w-16 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-lg shadow-emerald-500/20 group-hover:scale-110 transition-transform duration-300">
+                  <i class="ri-macbook-line text-2xl text-white"></i>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-[11px] font-bold text-emerald-600 uppercase tracking-wider mb-1" data-i18n="produk.laptopLabel">Laptop</p>
+                <h3 class="text-base font-extrabold text-slate-900" data-i18n="produk.laptopTitle">Laptop</h3>
+                <p class="text-xs text-slate-500 mt-1.5 leading-relaxed" data-i18n="produk.laptopDesc">Baru & segel, berbagai varian tersedia.</p>
+                <div class="flex items-center justify-between mt-5 pt-4 border-t border-slate-100">
+                  <span class="inline-flex items-center rounded-full bg-emerald-50 px-3 py-1 text-[13px] font-extrabold text-emerald-600" data-i18n="produk.laptopPrice">Mulai Rp 4jt</span>
+                    <a href="https://wa.me/6285738627984?text=Halo%20Admin%2C%20saya%20mau%20konsultasi%20rakit%20pc%20atau%20laptop%20baru%20bisa%3F" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-[12px] font-extrabold text-slate-900 hover:text-emerald-600 transition-colors group/tanya">
+                      <span data-i18n="produk.tanya">Tanya</span>
+                      <i class="ri-arrow-right-up-line text-sm transition-transform group-hover/tanya:translate-x-0.5 group-hover/tanya:-translate-y-0.5"></i>
+                    </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Printer -->
+            <div class="reveal group card-shine rounded-2xl border border-slate-200 bg-white hover:shadow-2xl hover:shadow-emerald-500/5 hover:-translate-y-1.5 hover:border-emerald-200/60 transition-all duration-300" style="transition-delay:0.1s">
+              <div class="h-40 bg-gradient-to-br from-emerald-50 to-emerald-100/50 flex items-center justify-center border-b border-slate-100">
+                <div class="h-16 w-16 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-lg shadow-emerald-500/20 group-hover:scale-110 transition-transform duration-300">
+                  <i class="ri-printer-line text-2xl text-white"></i>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-[11px] font-bold text-emerald-600 uppercase tracking-wider mb-1" data-i18n="produk.printerLabel">Printer</p>
+                <h3 class="text-base font-extrabold text-slate-900" data-i18n="produk.printerTitle">Printer HP & Epson</h3>
+                <p class="text-xs text-slate-500 mt-1.5 leading-relaxed" data-i18n="produk.printerDesc">Berbagai tipe untuk rumah dan kantor.</p>
+                <div class="flex items-center justify-between mt-5 pt-4 border-t border-slate-100">
+                  <span class="inline-flex items-center rounded-full bg-emerald-50 px-3 py-1 text-[13px] font-extrabold text-emerald-600" data-i18n="produk.printerPrice">Mulai Rp 1jt</span>
+                    <a href="https://wa.me/6285738627984?text=Halo%20Admin%2C%20saya%20mau%20konsultasi%20rakit%20pc%20atau%20laptop%20baru%20bisa%3F" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-[12px] font-extrabold text-slate-900 hover:text-emerald-600 transition-colors group/tanya">
+                      <span data-i18n="produk.tanya">Tanya</span>
+                      <i class="ri-arrow-right-up-line text-sm transition-transform group-hover/tanya:translate-x-0.5 group-hover/tanya:-translate-y-0.5"></i>
+                    </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Aksesoris -->
+            <div class="reveal group card-shine rounded-2xl border border-slate-200 bg-white hover:shadow-2xl hover:shadow-emerald-500/5 hover:-translate-y-1.5 hover:border-emerald-200/60 transition-all duration-300" style="transition-delay:0.15s">
+              <div class="h-40 bg-gradient-to-br from-emerald-50 to-emerald-100/50 flex items-center justify-center border-b border-slate-100">
+                <div class="h-16 w-16 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-lg shadow-emerald-500/20 group-hover:scale-110 transition-transform duration-300">
+                  <i class="ri-mouse-line text-2xl text-white"></i>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-[11px] font-bold text-emerald-600 uppercase tracking-wider mb-1" data-i18n="produk.aksesLabel">Aksesaris</p>
+                <h3 class="text-base font-extrabold text-slate-900" data-i18n="produk.aksesTitle">Mouse, Keyboard, RGB</h3>
+                <p class="text-xs text-slate-500 mt-1.5 leading-relaxed" data-i18n="produk.aksesDesc">Gaming dan kantor original.</p>
+                <div class="flex items-center justify-between mt-5 pt-4 border-t border-slate-100">
+                  <span class="inline-flex items-center rounded-full bg-emerald-50 px-3 py-1 text-[13px] font-extrabold text-emerald-600" data-i18n="produk.aksesPrice">Mulai Rp 100rb</span>
+                    <a href="https://wa.me/6285738627984?text=Halo%20Admin%2C%20saya%20mau%20konsultasi%20rakit%20pc%20atau%20laptop%20baru%20bisa%3F" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-[12px] font-extrabold text-slate-900 hover:text-emerald-600 transition-colors group/tanya">
+                      <span data-i18n="produk.tanya">Tanya</span>
+                      <i class="ri-arrow-right-up-line text-sm transition-transform group-hover/tanya:translate-x-0.5 group-hover/tanya:-translate-y-0.5"></i>
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LAYANAN -->
+      <section id="layanan" class="bg-slate-50/80 border-y border-slate-200">
+        <div class="mx-auto max-w-7xl px-6 py-20 sm:py-28">
+          <div class="text-center mb-16">
+            <div class="reveal">
+              <span class="inline-flex items-center gap-2 rounded-full bg-emerald-50 border border-emerald-200/60 px-4 py-1.5 text-xs font-bold text-emerald-700 mb-3">
+                <i class="ri-service-line text-xs"></i>
+                <span data-i18n="layanan.badge">Layanan</span>
+              </span>
+              <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3" data-i18n="layanan.title">Yang Kami Tawarkan</h2>
+              <p class="mt-3 text-slate-500" data-i18n="layanan.desc">Kepercayaan pelanggan adalah prioritas</p>
+            </div>
+          </div>
+
+          <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="reveal rounded-2xl bg-white p-6 border border-slate-200 hover:shadow-xl hover:shadow-emerald-500/5 hover:-translate-y-1 hover:border-emerald-200/50 transition-all duration-300">
+              <div class="flex items-center gap-4 mb-3">
+                <div class="h-12 w-12 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-md">
+                  <i class="ri-tv-2-line text-xl text-white"></i>
+                </div>
+                <h3 class="text-[15px] font-extrabold text-slate-900" data-i18n="layanan.1title">Rakitan PC Custom</h3>
+              </div>
+              <p class="text-[13px] text-slate-500 leading-relaxed pl-16" data-i18n="layanan.1desc">Rakit PC sesuai kebutuhan gaming, kantor, editing dengan komponen terbaik.</p>
+            </div>
+
+            <div class="reveal rounded-2xl bg-white p-6 border border-slate-200 hover:shadow-xl hover:shadow-emerald-500/5 hover:-translate-y-1 hover:border-emerald-200/50 transition-all duration-300" style="transition-delay:0.05s">
+              <div class="flex items-center gap-4 mb-3">
+                <div class="h-12 w-12 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-md">
+                  <i class="ri-macbook-line text-xl text-white"></i>
+                </div>
+                <h3 class="text-[15px] font-extrabold text-slate-900" data-i18n="layanan.2title">Laptop Baru</h3>
+              </div>
+              <p class="text-[13px] text-slate-500 leading-relaxed pl-16" data-i18n="layanan.2desc">Laptop baru berbagai merek dengan harga kompetitif dan garansi resmi.</p>
+            </div>
+
+            <div class="reveal rounded-2xl bg-white p-6 border border-slate-200 hover:shadow-xl hover:shadow-emerald-500/5 hover:-translate-y-1 hover:border-emerald-200/50 transition-all duration-300" style="transition-delay:0.1s">
+              <div class="flex items-center gap-4 mb-3">
+                <div class="h-12 w-12 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-md">
+                  <i class="ri-disc-line text-xl text-white"></i>
+                </div>
+                <h3 class="text-[15px] font-extrabold text-slate-900" data-i18n="layanan.3title">Instalasi Software</h3>
+              </div>
+              <p class="text-[13px] text-slate-500 leading-relaxed pl-16" data-i18n="layanan.3desc">Pasang Windows, Office, antivirus, dan aplikasi lainnya dengan teknisi berpengalaman.</p>
+            </div>
+
+            <div class="reveal rounded-2xl bg-white p-6 border border-slate-200 hover:shadow-xl hover:shadow-emerald-500/5 hover:-translate-y-1 hover:border-emerald-200/50 transition-all duration-300" style="transition-delay:0.15s">
+              <div class="flex items-center gap-4 mb-3">
+                <div class="h-12 w-12 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-md">
+                  <i class="ri-printer-line text-xl text-white"></i>
+                </div>
+                <h3 class="text-[15px] font-extrabold text-slate-900" data-i18n="layanan.4title">Printer & Aksesaris</h3>
+              </div>
+              <p class="text-[13px] text-slate-500 leading-relaxed pl-16" data-i18n="layanan.4desc">Jual printer, cartridge, dan aksesaris komputer original dan bergaransi.</p>
+            </div>
+
+            <div class="reveal rounded-2xl bg-white p-6 border border-slate-200 hover:shadow-xl hover:shadow-emerald-500/5 hover:-translate-y-1 hover:border-emerald-200/50 transition-all duration-300" style="transition-delay:0.2s">
+              <div class="flex items-center gap-4 mb-3">
+                <div class="h-12 w-12 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-md">
+                  <i class="ri-truck-line text-xl text-white"></i>
+                </div>
+                <h3 class="text-[15px] font-extrabold text-slate-900" data-i18n="layanan.5title">Jemput & Kirim</h3>
+              </div>
+              <p class="text-[13px] text-slate-500 leading-relaxed pl-16" data-i18n="layanan.5desc">Layanan antar jemput barang dengan ongkir kompetitif ke seluruh Bali.</p>
+            </div>
+
+            <div class="reveal rounded-2xl bg-white p-6 border border-slate-200 hover:shadow-xl hover:shadow-emerald-500/5 hover:-translate-y-1 hover:border-emerald-200/50 transition-all duration-300" style="transition-delay:0.25s">
+              <div class="flex items-center gap-4 mb-3">
+                <div class="h-12 w-12 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-md">
+                  <i class="ri-tools-line text-xl text-white"></i>
+                </div>
+                <h3 class="text-[15px] font-extrabold text-slate-900" data-i18n="layanan.6title">Servis & Perbaikan</h3>
+              </div>
+              <p class="text-[13px] text-slate-500 leading-relaxed pl-16" data-i18n="layanan.6desc">Perbaiki hardware & software laptop dan PC dengan teknisi berpengalaman.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BRANDS -->
+      <section id="brands" class="bg-white">
+        <div class="mx-auto max-w-7xl px-6 py-20 sm:py-24">
+          <div class="text-center mb-14">
+            <div class="reveal">
+              <span class="inline-flex items-center gap-2 rounded-full bg-emerald-50 border border-emerald-200/60 px-4 py-1.5 text-xs font-bold text-emerald-700 mb-3">
+                <i class="ri-award-line text-xs"></i>
+                <span data-i18n="brands.badge">Brands</span>
+              </span>
+              <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3" data-i18n="brands.title">Yang Kami Layanani</h2>
+              <p class="mt-3 text-slate-500" data-i18n="brands.desc">Bekerja sama dengan brand-brand terpercaya</p>
+            </div>
+          </div>
+
+          <div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-slate-50 via-white to-slate-50 py-4">
+            <div class="flex gap-4 animate-marquee will-change-transform">
+              <div class="shrink-0 w-36 rounded-xl border border-slate-200 bg-white/80 backdrop-blur px-4 py-5 flex flex-col items-center justify-center gap-2 hover:shadow-md hover:border-slate-300 transition-all">
+                <span class="text-xl font-extrabold text-slate-900 tracking-tight">AMD</span>
+                <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wide">Processor</span>
+              </div>
+              <div class="shrink-0 w-36 rounded-xl border border-slate-200 bg-white/80 backdrop-blur px-4 py-5 flex flex-col items-center justify-center gap-2 hover:shadow-md hover:border-emerald-300 transition-all">
+                <span class="text-xl font-extrabold text-emerald-600 tracking-tight">NVIDIA</span>
+                <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wide">Graphics</span>
+              </div>
+              <div class="shrink-0 w-36 rounded-xl border border-slate-200 bg-white/80 backdrop-blur px-4 py-5 flex flex-col items-center justify-center gap-2 hover:shadow-md hover:border-slate-300 transition-all">
+                <span class="text-xl font-extrabold text-slate-900 tracking-tight">INTEL</span>
+                <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wide">Processor</span>
+              </div>
+              <div class="shrink-0 w-36 rounded-xl border border-slate-200 bg-white/80 backdrop-blur px-4 py-5 flex flex-col items-center justify-center gap-2 hover:shadow-md hover:border-red-300 transition-all">
+                <span class="text-xl font-extrabold text-red-700 tracking-tight">ASUS</span>
+                <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wide">Laptop / PC</span>
+              </div>
+              <div class="shrink-0 w-36 rounded-xl border border-slate-200 bg-white/80 backdrop-blur px-4 py-5 flex flex-col items-center justify-center gap-2 hover:shadow-md hover:border-emerald-300 transition-all">
+                <span class="text-xl font-extrabold text-emerald-700 tracking-tight">ACER</span>
+                <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wide">Laptop</span>
+              </div>
+              <div class="shrink-0 w-36 rounded-xl border border-slate-200 bg-white/80 backdrop-blur px-4 py-5 flex flex-col items-center justify-center gap-2 hover:shadow-md hover:border-blue-300 transition-all">
+                <span class="text-xl font-extrabold text-blue-700 tracking-tight">HP</span>
+                <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wide">Printer / Laptop</span>
+              </div>
+              <div class="shrink-0 w-36 rounded-xl border border-slate-200 bg-white/80 backdrop-blur px-4 py-5 flex flex-col items-center justify-center gap-2 hover:shadow-md hover:border-red-300 transition-all">
+                <span class="text-xl font-extrabold text-red-600 tracking-tight">LENOVO</span>
+                <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wide">Laptop</span>
+              </div>
+              <div class="shrink-0 w-36 rounded-xl border border-slate-200 bg-white/80 backdrop-blur px-4 py-5 flex flex-col items-center justify-center gap-2 hover:shadow-md hover:border-slate-300 transition-all">
+                <span class="text-xl font-extrabold text-slate-900 tracking-tight">DELL</span>
+                <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wide">Laptop</span>
+              </div>
+              <div class="shrink-0 w-36 rounded-xl border border-slate-200 bg-white/80 backdrop-blur px-4 py-5 flex flex-col items-center justify-center gap-2 hover:shadow-md hover:border-red-300 transition-all">
+                <span class="text-xl font-extrabold text-red-600 tracking-tight">MSI</span>
+                <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wide">Laptop / PC</span>
+              </div>
+              <div class="shrink-0 w-36 rounded-xl border border-slate-200 bg-white/80 backdrop-blur px-4 py-5 flex flex-col items-center justify-center gap-2 hover:shadow-md hover:border-slate-300 transition-all">
+                <span class="text-xl font-extrabold text-slate-900 tracking-tight">GIGABYTE</span>
+                <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wide">Motherboard</span>
+              </div>
+              <div class="shrink-0 w-36 rounded-xl border border-slate-200 bg-white/80 backdrop-blur px-4 py-5 flex flex-col items-center justify-center gap-2 hover:shadow-md hover:border-orange-300 transition-all">
+                <span class="text-xl font-extrabold text-orange-600 tracking-tight">CORSAIR</span>
+                <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wide">RAM / PSU</span>
+              </div>
+              <div class="shrink-0 w-36 rounded-xl border border-slate-200 bg-white/80 backdrop-blur px-4 py-5 flex flex-col items-center justify-center gap-2 hover:shadow-md hover:border-slate-300 transition-all">
+                <span class="text-xl font-extrabold text-slate-900 tracking-tight">KINGSTON</span>
+                <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wide">RAM / SSD</span>
+              </div>
+              <div class="shrink-0 w-36 rounded-xl border border-slate-200 bg-white/80 backdrop-blur px-4 py-5 flex flex-col items-center justify-center gap-2 hover:shadow-md hover:border-blue-300 transition-all">
+                <span class="text-xl font-extrabold text-blue-900 tracking-tight">SAMSUNG</span>
+                <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wide">SSD / Monitor</span>
+              </div>
+              <div class="shrink-0 w-36 rounded-xl border border-slate-200 bg-white/80 backdrop-blur px-4 py-5 flex flex-col items-center justify-center gap-2 hover:shadow-md hover:border-slate-300 transition-all">
+                <span class="text-xl font-extrabold text-slate-900 tracking-tight">LOGITECH</span>
+                <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wide">Aksesaris</span>
+              </div>
+              <div class="shrink-0 w-36 rounded-xl border border-slate-200 bg-white/80 backdrop-blur px-4 py-5 flex flex-col items-center justify-center gap-2 hover:shadow-md hover:border-orange-300 transition-all">
+                <span class="text-xl font-extrabold text-orange-500 tracking-tight">REXUS</span>
+                <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wide">Keyboard / Mouse</span>
+              </div>
+              <div class="shrink-0 w-36 rounded-xl border border-slate-200 bg-white/80 backdrop-blur px-4 py-5 flex flex-col items-center justify-center gap-2 hover:shadow-md hover:border-red-300 transition-all">
+                <span class="text-xl font-extrabold text-red-700 tracking-tight">DLT</span>
+                <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wide">Aksesaris</span>
+              </div>
+              <div class="shrink-0 w-36 rounded-xl border border-slate-200 bg-white/80 backdrop-blur px-4 py-5 flex flex-col items-center justify-center gap-2 hover:shadow-md hover:border-slate-300 transition-all">
+                <span class="text-xl font-extrabold text-slate-900 tracking-tight">EPSON</span>
+                <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wide">Printer</span>
+              </div>
+              <div class="shrink-0 w-36 rounded-xl border border-slate-200 bg-white/80 backdrop-blur px-4 py-5 flex flex-col items-center justify-center gap-2 hover:shadow-md hover:border-red-300 transition-all">
+                <span class="text-xl font-extrabold text-red-600 tracking-tight">CANON</span>
+                <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wide">Printer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BENEFITS -->
+      <section class="bg-slate-50/80 border-y border-slate-200">
+        <div class="mx-auto max-w-7xl px-6 py-20 sm:py-28">
+          <div class="text-center mb-16">
+            <div class="reveal">
+              <span class="inline-flex items-center gap-2 rounded-full bg-emerald-50 border border-emerald-200/60 px-4 py-1.5 text-xs font-bold text-emerald-700 mb-3">
+                <i class="ri-star-line text-xs"></i>
+                <span data-i18n="benefits.badge">Keunggulan</span>
+              </span>
+              <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3" data-i18n="benefits.title">Mengapa Memilih Kami</h2>
+              <p class="mt-3 text-slate-500" data-i18n="benefits.desc">Kami berkomitmen memberikan yang terbaik untuk Anda</p>
+            </div>
+          </div>
+
+          <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="reveal group rounded-xl bg-white p-6 border border-slate-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+              <div class="flex items-start gap-4">
+                <div class="h-12 w-12 shrink-0 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-md">
+                  <i class="ri-money-dollar-circle-line text-xl text-white"></i>
+                </div>
+                <div>
+                  <p class="text-[11px] font-bold text-emerald-600 uppercase tracking-widest mb-0.5">01</p>
+                  <h3 class="text-base font-extrabold text-slate-900" data-i18n="benefits.1title">Harga Kompetitif</h3>
+                  <p class="mt-1 text-[13px] text-slate-500 leading-relaxed" data-i18n="benefits.1desc">Harga terbaik di Denpasar dengan kualitas original. Tanpa biaya tersembunyi.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="reveal group rounded-xl bg-white p-6 border border-slate-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300" style="transition-delay:0.05s">
+              <div class="flex items-start gap-4">
+                <div class="h-12 w-12 shrink-0 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-md">
+                  <i class="ri-shield-check-line text-xl text-white"></i>
+                </div>
+                <div>
+                  <p class="text-[11px] font-bold text-emerald-600 uppercase tracking-widest mb-0.5">02</p>
+                  <h3 class="text-base font-extrabold text-slate-900" data-i18n="benefits.2title">Garansi Resmi</h3>
+                  <p class="mt-1 text-[13px] text-slate-500 leading-relaxed" data-i18n="benefits.2desc">Semua produk bergaransi resmi distributor untuk rasa aman maksimal.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="reveal group rounded-xl bg-white p-6 border border-slate-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300" style="transition-delay:0.1s">
+              <div class="flex items-start gap-4">
+                <div class="h-12 w-12 shrink-0 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-md">
+                  <i class="ri-flashlight-line text-xl text-white"></i>
+                </div>
+                <div>
+                  <p class="text-[11px] font-bold text-emerald-600 uppercase tracking-widest mb-0.5">03</p>
+                  <h3 class="text-base font-extrabold text-slate-900" data-i18n="benefits.3title">Layanan Cepat</h3>
+                  <p class="mt-1 text-[13px] text-slate-500 leading-relaxed" data-i18n="benefits.3desc">Respon cepat via WA dan telepon. Siap kirim/jemput sesuai kebutuhan.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="reveal group rounded-xl bg-white p-6 border border-slate-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300" style="transition-delay:0.15s">
+              <div class="flex items-start gap-4">
+                <div class="h-12 w-12 shrink-0 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-md">
+                  <i class="ri-tools-line text-xl text-white"></i>
+                </div>
+                <div>
+                  <p class="text-[11px] font-bold text-emerald-600 uppercase tracking-widest mb-0.5">04</p>
+                  <h3 class="text-base font-extrabold text-slate-900" data-i18n="benefits.4title">Teknisi Berpengalaman</h3>
+                  <p class="mt-1 text-[13px] text-slate-500 leading-relaxed" data-i18n="benefits.4desc">Dioperasikan teknisi berpengalaman lebih dari 5 tahun.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="reveal group rounded-xl bg-white p-6 border border-slate-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300" style="transition-delay:0.2s">
+              <div class="flex items-start gap-4">
+                <div class="h-12 w-12 shrink-0 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-md">
+                  <i class="ri-lightbulb-line text-xl text-white"></i>
+                </div>
+                <div>
+                  <p class="text-[11px] font-bold text-emerald-600 uppercase tracking-widest mb-0.5">05</p>
+                  <h3 class="text-base font-extrabold text-slate-900" data-i18n="benefits.5title">Konsultasi Gratis</h3>
+                  <p class="mt-1 text-[13px] text-slate-500 leading-relaxed" data-i18n="benefits.5desc">Konsultasi kebutuhan komputer & laptop GRATIS tanpa harus beli.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="reveal group rounded-xl bg-white p-6 border border-slate-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300" style="transition-delay:0.25s">
+              <div class="flex items-start gap-4">
+                <div class="h-12 w-12 shrink-0 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-md">
+                  <i class="ri-bank-card-line text-xl text-white"></i>
+                </div>
+                <div>
+                  <p class="text-[11px] font-bold text-emerald-600 uppercase tracking-widest mb-0.5">06</p>
+                  <h3 class="text-base font-extrabold text-slate-900" data-i18n="benefits.6title">Pembayaran Fleksibel</h3>
+                  <p class="mt-1 text-[13px] text-slate-500 leading-relaxed" data-i18n="benefits.6desc">Transfer, cash, atau cicilan untuk membeli nominal tertentu.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- REVIEWS -->
+      <section class="bg-white">
+        <div class="mx-auto max-w-7xl px-6 py-20 sm:py-28">
+          <div class="text-center mb-16">
+            <div class="reveal">
+              <span class="inline-flex items-center gap-2 rounded-full bg-emerald-50 border border-emerald-200/60 px-4 py-1.5 text-xs font-bold text-emerald-700 mb-3">
+                <i class="ri-chat-3-line text-xs"></i>
+                <span data-i18n="reviews.badge">Testimonial</span>
+              </span>
+              <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3" data-i18n="reviews.title">Apa Kata Pelanggan</h2>
+              <p class="mt-3 text-slate-500" data-i18n="reviews.desc">Kepercayaan pelanggan adalah prioritas utama kami</p>
+            </div>
+          </div>
+
+          <div class="grid gap-6 sm:grid-cols-3 max-w-5xl mx-auto">
+            <div class="reveal rounded-2xl border border-slate-200 bg-white p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              <div class="flex items-center gap-1 mb-3">
+                <i class="ri-star-fill text-sm text-yellow-400"></i>
+                <i class="ri-star-fill text-sm text-yellow-400"></i>
+                <i class="ri-star-fill text-sm text-yellow-400"></i>
+                <i class="ri-star-fill text-sm text-yellow-400"></i>
+                <i class="ri-star-fill text-sm text-yellow-400"></i>
+              </div>
+              <p class="text-[13px] text-slate-600 leading-relaxed italic" data-i18n="reviews.1text">"Pelayanan cepat dan ramah. PC rakitan saya bekerja dengan sangat baik. Recommended!"</p>
+              <div class="flex items-center gap-3 mt-4 pt-3 border-t border-slate-100">
+                <div class="h-9 w-9 rounded-full bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center text-white text-xs font-bold">A</div>
+                <div>
+                  <p class="text-xs font-bold text-slate-900" data-i18n="reviews.1name">Andi</p>
+                  <p class="text-[10px] text-slate-400" data-i18n="reviews.1role">Pelanggan Setia</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="reveal rounded-2xl border border-slate-200 bg-white p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300" style="transition-delay:0.1s">
+              <div class="flex items-center gap-1 mb-3">
+                <i class="ri-star-fill text-sm text-yellow-400"></i>
+                <i class="ri-star-fill text-sm text-yellow-400"></i>
+                <i class="ri-star-fill text-sm text-yellow-400"></i>
+                <i class="ri-star-fill text-sm text-yellow-400"></i>
+                <i class="ri-star-fill text-sm text-yellow-400"></i>
+              </div>
+              <p class="text-[13px] text-slate-600 leading-relaxed italic" data-i18n="reviews.2text">"Laptop baru saya dikirim dengan aman. Harga lebih murah dari toko lain. Mantap!"</p>
+              <div class="flex items-center gap-3 mt-4 pt-3 border-t border-slate-100">
+                <div class="h-9 w-9 rounded-full bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center text-white text-xs font-bold">S</div>
+                <div>
+                  <p class="text-xs font-bold text-slate-900" data-i18n="reviews.2name">Sari</p>
+                  <p class="text-[10px] text-slate-400" data-i18n="reviews.2role">Pelanggan Setia</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="reveal rounded-2xl border border-slate-200 bg-white p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300" style="transition-delay:0.2s">
+              <div class="flex items-center gap-1 mb-3">
+                <i class="ri-star-fill text-sm text-yellow-400"></i>
+                <i class="ri-star-fill text-sm text-yellow-400"></i>
+                <i class="ri-star-fill text-sm text-yellow-400"></i>
+                <i class="ri-star-fill text-sm text-yellow-400"></i>
+                <i class="ri-star-half-fill text-sm text-yellow-400"></i>
+              </div>
+              <p class="text-[13px] text-slate-600 leading-relaxed italic" data-i18n="reviews.3text">"Servis cepat, teknisi berpengalaman. Laptop saya yang bermasalah langsung beres. Terima kasih!"</p>
+              <div class="flex items-center gap-3 mt-4 pt-3 border-t border-slate-100">
+                <div class="h-9 w-9 rounded-full bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center text-white text-xs font-bold">B</div>
+                <div>
+                  <p class="text-xs font-bold text-slate-900" data-i18n="reviews.3name">Budi</p>
+                  <p class="text-[10px] text-slate-400" data-i18n="reviews.3role">Pelanggan Setia</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Voucher card -->
+          <div class="reveal max-w-2xl mx-auto mt-12">
+            <div class="relative rounded-2xl bg-gradient-to-br from-emerald-600 to-emerald-700 p-[2px] shadow-xl shadow-emerald-500/25 hover:shadow-emerald-500/40 transition-shadow duration-300">
+              <div class="relative rounded-2xl bg-white overflow-hidden">
+                <div class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-white border-4 border-emerald-600 z-10"></div>
+                <div class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-8 h-8 rounded-full bg-white border-4 border-emerald-600 z-10"></div>
+                <div class="absolute left-1/2 top-0 bottom-0 w-px border-l-2 border-dashed border-emerald-200"></div>
+                <div class="relative grid grid-cols-2 min-h-[180px]">
+                  <div class="flex flex-col items-center justify-center gap-1 py-8 px-4">
+                    <span class="text-[11px] font-bold text-emerald-600 uppercase tracking-wider" data-i18n="voucher.potongan">Potongan</span>
+                    <span class="text-4xl sm:text-5xl font-black text-slate-900">Rp10.000</span>
+                    <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full" data-i18n="voucher.minBelanja">MIN. BELANJA Rp100K</span>
+                  </div>
+                  <div class="flex flex-col items-center justify-center gap-2 py-8 px-4 text-center">
+                    <div class="h-12 w-12 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center text-white shadow-md">
+                      <i class="ri-thumb-up-line text-xl"></i>
+                    </div>
+                    <p class="text-xs font-bold text-slate-800 leading-relaxed" data-i18n="voucher.cara">Rating & review bagus<br />+ screenshot halaman ini</p>
+                    <span class="inline-flex items-center gap-1 text-[10px] font-extrabold text-emerald-600 uppercase tracking-wider">
+                      <i class="ri-corner-down-right-line text-[10px]"></i>
+                      <span data-i18n="voucher.tunjukin">Tunjukin ke kasir</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="border-t border-emerald-100 bg-emerald-50/50 px-6 py-2.5 text-center">
+                  <p class="text-[10px] text-slate-500" data-i18n="voucher.syarat">*Berlaku untuk 1 transaksi. Tidak dapat digabung dengan promo lain.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal text-center mt-10">
+            <a href="https://www.google.com/maps/search/Media+Computer+Bali+Denpasar" target="_blank" rel="noopener" class="inline-flex items-center gap-3 rounded-2xl border border-slate-200 bg-white px-8 py-5 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
+              <i class="ri-google-fill text-2xl text-slate-700"></i>
+              <div class="text-left">
+                <div class="flex items-center gap-2">
+                  <span class="text-lg font-extrabold text-slate-900">4.6</span>
+                  <div class="flex items-center gap-0.5">
+                    <i class="ri-star-fill text-sm text-yellow-400"></i>
+                    <i class="ri-star-fill text-sm text-yellow-400"></i>
+                    <i class="ri-star-fill text-sm text-yellow-400"></i>
+                    <i class="ri-star-fill text-sm text-yellow-400"></i>
+                    <i class="ri-star-half-fill text-sm text-yellow-400"></i>
+                  </div>
+                </div>
+                <p class="text-[11px] text-slate-400" data-i18n="reviews.googleLabel">Google Review — Tulis review</p>
+              </div>
+              <i class="ri-arrow-right-s-line text-xl text-slate-400 ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- KONTAK -->
+      <section id="kontak" class="bg-slate-50/80 border-y border-slate-200">
+        <div class="mx-auto max-w-7xl px-6 py-20 sm:py-28">
+          <div class="text-center mb-16">
+            <div class="reveal">
+              <span class="inline-flex items-center gap-2 rounded-full bg-emerald-50 border border-emerald-200/60 px-4 py-1.5 text-xs font-bold text-emerald-700 mb-3">
+                <i class="ri-contacts-line text-xs"></i>
+                <span data-i18n="kontak.badge">Kontak</span>
+              </span>
+              <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3" data-i18n="kontak.title">Temukan Kami</h2>
+              <p class="mt-3 text-slate-500" data-i18n="kontak.desc">Lokasi Media Computer Bali di Denpasar</p>
+            </div>
+          </div>
+
+          <div class="grid gap-8 lg:grid-cols-2">
+            <div class="reveal overflow-hidden rounded-2xl border border-slate-200 shadow-lg">
+              <iframe
+                title="Media Computer Bali Location"
+                src="https://maps.google.com/maps?q=Jl.+Gatot+Subroto+Gang+Turi+Permai+No.+26+Denpasar+Bali&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="100%"
+                min-height="400"
+                style="border:0;min-height:400px;display:block;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+
+            <div class="reveal flex flex-col justify-center gap-8" style="transition-delay:0.15s">
+              <div>
+                <h3 class="text-xl font-extrabold text-slate-900 mb-6" data-i18n="kontak.header">Kontak & Alamat</h3>
+                <div class="space-y-5">
+                  <div class="flex items-start gap-4">
+                    <div class="h-12 w-12 shrink-0 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center text-white shadow-md">
+                      <i class="ri-map-pin-2-line text-lg"></i>
+                    </div>
+                    <div>
+                      <p class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-0.5" data-i18n="kontak.alamatLabel">Alamat</p>
+                      <p class="text-[13px] font-semibold text-slate-700 leading-relaxed">Jl. Gatot Subroto Gg. Turi Permai No. 26<br />Denpasar, Bali</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start gap-4">
+                    <div class="h-12 w-12 shrink-0 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center text-white shadow-md">
+                      <i class="ri-phone-line text-lg"></i>
+                    </div>
+                    <div>
+                      <p class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-0.5" data-i18n="kontak.teleponLabel">Telepon / WhatsApp</p>
+                      <a href="https://wa.me/6285738627984" target="_blank" rel="noopener" class="text-[13px] font-semibold text-slate-900 hover:text-emerald-600 transition-colors">+62 857-3862-7984</a>
+                      <p class="text-[13px] font-semibold text-slate-700 mt-0.5">+62 857-9272-1649</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start gap-4">
+                    <div class="h-12 w-12 shrink-0 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center text-white shadow-md">
+                      <i class="ri-time-line text-lg"></i>
+                    </div>
+                    <div>
+                      <p class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-0.5" data-i18n="kontak.jamLabel">Jam Buka</p>
+                      <p class="text-[13px] font-semibold text-slate-700" data-i18n="kontak.jam1">Senin - Sabtu: 10:00 - 19:00</p>
+                      <p class="text-[13px] font-semibold text-slate-700" data-i18n="kontak.jam2">Minggu: 10:00 - 17:00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex flex-col sm:flex-row items-stretch gap-3">
+                <a href="https://wa.me/6285738627984?text=Halo%20Admin%2C%20saya%20mau%20konsultasi%20rakit%20pc%20atau%20laptop%20baru%20bisa%3F" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-700 hover:to-emerald-600 text-white px-6 py-3.5 text-sm font-extrabold shadow-md hover:shadow-lg hover:shadow-emerald-500/25 transition-all active:scale-[0.97]">
+                  <i class="ri-whatsapp-fill text-base"></i>
+                  <span data-i18n="kontak.chatWa">Chat WhatsApp</span>
+                </a>
+                <a href="tel:+6285738627984" class="inline-flex items-center justify-center gap-2 rounded-xl bg-white text-slate-700 px-6 py-3.5 text-sm font-bold ring-1 ring-slate-200 hover:ring-slate-300 hover:shadow-lg transition-all active:scale-[0.97]">
+                  <i class="ri-phone-line text-base"></i>
+                  <span data-i18n="kontak.telepon">Telepon</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MARKETPLACE -->
+      <section id="marketplace" class="bg-white border-t border-slate-200">
+        <div class="mx-auto max-w-7xl px-6 py-20 sm:py-24">
+          <div class="text-center mb-16">
+            <div class="reveal">
+              <span class="inline-flex items-center gap-2 rounded-full bg-emerald-50 border border-emerald-200/60 px-4 py-1.5 text-xs font-bold text-emerald-700 mb-3">
+                <i class="ri-shopping-cart-2-line text-xs"></i>
+                <span data-i18n="marketplace.badge">Marketplace</span>
+              </span>
+              <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3" data-i18n="marketplace.title">Juga Tersedia Di</h2>
+              <p class="mt-3 text-slate-500" data-i18n="marketplace.desc">Temukan produk kami di marketplace favorit Anda</p>
+            </div>
+          </div>
+
+          <div class="grid gap-6 sm:grid-cols-3 max-w-4xl mx-auto">
+            <a href="https://www.tokopedia.com/mediacompbali" target="_blank" rel="noopener" class="reveal group flex flex-col items-center justify-center gap-5 rounded-2xl border border-slate-200 bg-white p-8 hover:shadow-xl hover:shadow-[#03AC0E]/10 hover:border-[#03AC0E]/30 hover:-translate-y-1.5 transition-all duration-300">
+              <div class="h-20 w-20 flex items-center justify-center">
+                <img src="https://p16-assets-sg.tokopedia-static.net/tos-alisg-i-cqp9s0kcd0-sg/assets-tokopedia-lite/v2/zeus/production/e5b8438b.svg" alt="Tokopedia" class="h-24 w-24 object-contain" />
+              </div>
+              <div class="text-center">
+                <p class="text-base font-extrabold text-slate-900">Tokopedia</p>
+                <p class="text-xs text-slate-500 mt-1">@mediacompbali</p>
+              </div>
+              <span class="inline-flex items-center gap-1 text-[11px] font-extrabold text-[#03AC0E] uppercase tracking-wider group-hover:text-[#028a0c] transition-colors">
+                <span data-i18n="marketplace.visitTokped">Kunjungi Toko</span>
+                <i class="ri-external-link-line text-xs"></i>
+              </span>
+            </a>
+
+            <a href="https://shopee.co.id/mediacomputerbali" target="_blank" rel="noopener" class="reveal group flex flex-col items-center justify-center gap-5 rounded-2xl border border-slate-200 bg-white p-8 hover:shadow-xl hover:shadow-[#EE4D2D]/10 hover:border-[#EE4D2D]/30 hover:-translate-y-1.5 transition-all duration-300" style="transition-delay:0.1s">
+              <div class="h-20 w-20 flex items-center justify-center">
+                <img src="https://deo.shopeemobile.com/shopee/shopee-appdlpage-live-id/static/img/shopee_logo2.c6c25fa3.png" alt="Shopee" class="h-24 w-24 object-contain" />
+              </div>
+              <div class="text-center">
+                <p class="text-base font-extrabold text-slate-900">Shopee</p>
+                <p class="text-xs text-slate-500 mt-1">@mediacomputerbali</p>
+              </div>
+              <span class="inline-flex items-center gap-1 text-[11px] font-extrabold text-[#EE4D2D] uppercase tracking-wider group-hover:text-[#c62810] transition-colors">
+                <span data-i18n="marketplace.visitShopee">Kunjungi Toko</span>
+                <i class="ri-external-link-line text-xs"></i>
+              </span>
+            </a>
+
+            <a href="https://www.instagram.com/media_computer_bali" target="_blank" rel="noopener" class="reveal group flex flex-col items-center justify-center gap-5 rounded-2xl border border-slate-200 bg-white p-8 hover:shadow-xl hover:shadow-[#E4405F]/10 hover:border-[#E4405F]/30 hover:-translate-y-1.5 transition-all duration-300" style="transition-delay:0.2s">
+              <div class="h-20 w-20 flex items-center justify-center">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/250px-Instagram_logo_2016.svg.png" alt="Instagram" class="h-16 w-16 object-contain" />
+              </div>
+              <div class="text-center">
+                <p class="text-base font-extrabold text-slate-900">Instagram</p>
+                <p class="text-xs text-slate-500 mt-1">@media_computer_bali</p>
+              </div>
+              <span class="inline-flex items-center gap-1 text-[11px] font-extrabold text-[#E4405F] uppercase tracking-wider group-hover:text-[#c62810] transition-colors">
+                <span data-i18n="marketplace.visitIg">Ikuti Kami</span>
+                <i class="ri-external-link-line text-xs"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 border-t border-slate-800">
+      <div class="mx-auto max-w-7xl px-6 py-12">
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="reveal">
+            <div class="flex items-center gap-2.5 mb-4">
+              <div class="h-8 w-8 rounded-lg bg-gradient-to-br from-emerald-500 to-emerald-600 text-white grid place-items-center font-extrabold text-[11px] shadow-md">MCB</div>
+              <span class="text-sm font-extrabold text-white">Media Computer Bali</span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed" data-i18n="footer.desc">Toko komputer, laptop, dan rakitan PC terpercaya di Denpasar, Bali. Melayani jual baru, servis, instalasi software, dan aksesoris.</p>
+          </div>
+
+          <div class="reveal" style="transition-delay:0.05s">
+            <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4" data-i18n="footer.layanan">Layanan</p>
+            <ul class="space-y-2.5">
+              <li><a href="#produk" class="text-xs text-slate-300 hover:text-emerald-400 transition-colors" data-i18n="footer.rakitanPc">Rakitan PC</a></li>
+              <li><a href="#produk" class="text-xs text-slate-300 hover:text-emerald-400 transition-colors" data-i18n="footer.laptopBaru">Laptop Baru</a></li>
+              <li><a href="#layanan" class="text-xs text-slate-300 hover:text-emerald-400 transition-colors" data-i18n="footer.servis">Servis & Perbaikan</a></li>
+              <li><a href="#layanan" class="text-xs text-slate-300 hover:text-emerald-400 transition-colors" data-i18n="footer.instalasi">Instalasi Software</a></li>
+            </ul>
+          </div>
+
+          <div class="reveal" style="transition-delay:0.1s">
+            <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4" data-i18n="footer.kontak">Kontak</p>
+            <ul class="space-y-2.5">
+              <li class="flex items-center gap-2 text-xs text-slate-300">
+                <i class="ri-map-pin-2-line text-emerald-400 text-xs"></i>
+                Denpasar, Bali
+              </li>
+              <li>
+                <a href="https://wa.me/6285738627984" target="_blank" rel="noopener" class="flex items-center gap-2 text-xs text-slate-300 hover:text-emerald-400 transition-colors">
+                  <i class="ri-whatsapp-fill text-emerald-400 text-xs"></i>
+                  +62 857-3862-7984
+                </a>
+              </li>
+              <li>
+                <a href="mailto:mediacomputerbali@gmail.com" class="flex items-center gap-2 text-xs text-slate-300 hover:text-emerald-400 transition-colors">
+                  <i class="ri-mail-line text-emerald-400 text-xs"></i>
+                  mediacomputerbali@gmail.com
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="reveal" style="transition-delay:0.15s">
+            <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4" data-i18n="footer.ikuti">Ikuti Kami</p>
+            <div class="flex gap-3">
+              <a href="https://www.instagram.com/media_computer_bali" target="_blank" rel="noopener" class="h-10 w-10 rounded-xl bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-emerald-600 hover:text-white transition-all" aria-label="Instagram">
+                <i class="ri-instagram-line text-lg"></i>
+              </a>
+              <a href="https://wa.me/6285738627984" target="_blank" rel="noopener" class="h-10 w-10 rounded-xl bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-emerald-600 hover:text-white transition-all" aria-label="WhatsApp">
+                <i class="ri-whatsapp-line text-lg"></i>
+              </a>
+              <a href="https://www.tokopedia.com/mediacompbali" target="_blank" rel="noopener" class="h-10 w-10 rounded-xl bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-emerald-600 hover:text-white transition-all" aria-label="Tokopedia">
+                <i class="ri-shopping-bag-line text-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-10 pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+           <p class="text-xs text-slate-500">Develope with ❤️ by <a href="https://webkalcer.com" target="_blank" rel="noopener" class="text-emerald-400 hover:text-emerald-300 transition-colors">Webkalcer.com</a> <span class="text-slate-600">|</span> <span class="text-slate-500">Jasa Bikin Landing Page, Website Modern Dan Kalcer Di Indonesia</span></p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- FLOATING BOTTOM BAR (Mobile) -->
+    <div class="md:hidden fixed bottom-0 inset-x-0 z-50 flex gap-3 px-3 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] bg-gradient-to-t from-white via-white/95 to-white shadow-[0_-4px_30px_rgba(0,0,0,0.08)]">
+      <a href="https://maps.google.com/maps?q=Jl.+Gatot+Subroto+Gang+Turi+Permai+No.+26+Denpasar+Bali&t=&z=15&ie=UTF8&iwloc=&output=embed" target="_blank" rel="noopener" class="flex-1 bg-white text-slate-900 flex items-center justify-center gap-2.5 py-[18px] text-sm font-extrabold rounded-2xl shadow-sm border border-slate-200 active:scale-[0.97] transition-all" aria-label="Maps Lokasi">
+        <i class="ri-map-pin-2-line text-lg"></i>
+        <span data-i18n="bottom.lokasi">Lokasi</span>
+      </a>
+      <a href="https://wa.me/6285738627984?text=Halo%20Admin%2C%20saya%20mau%20konsultasi%20rakit%20pc%20atau%20laptop%20baru%20bisa%3F" target="_blank" rel="noopener" id="floating-wa" class="flex-1 bg-gradient-to-r from-emerald-600 to-emerald-500 text-white flex items-center justify-center gap-2.5 py-[18px] text-sm font-extrabold rounded-2xl shadow-[0_-4px_24px_rgba(16,185,129,0.35)] active:scale-[0.97] transition-all" aria-label="Chat WhatsApp">
+        <i class="ri-whatsapp-fill text-lg"></i>
+        <span data-i18n="bottom.chatWa">Chat WA</span>
+      </a>
+    </div>
+
+    <!-- SCROLL TO TOP (Desktop) -->
+    <button id="scroll-top" class="fixed bottom-6 right-6 z-40 h-11 w-11 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 text-white shadow-lg hover:shadow-xl hover:shadow-emerald-500/30 hover:-translate-y-1 transition-all duration-300 hidden active:scale-90" aria-label="Scroll to top">
+      <i class="ri-arrow-up-line text-lg"></i>
+    </button>
+
+    <script is:inline>
+      var langData = {
+        id: {
+          'nav.produk': 'Produk',
+          'nav.layanan': 'Layanan',
+          'nav.brands': 'Brands',
+          'nav.kontak': 'Kontak',
+          'nav.chatWa': 'Chat WA',
+          'hero.badge': 'Spesialis Rakit PC Gaming & Design Arsitek',
+          'hero.title1': 'Komputer & Laptop',
+          'hero.title2': 'Terpercaya',
+          'hero.title3': 'Bali',
+          'hero.preposition': 'di',
+          'hero.desc': 'Jual baru, rakitan PC, aksesaris, printer, dan jasa instalasi software. Bisa dijemput atau dikirim ke rumah dengan ongkir kompetitif.',
+          'hero.btnKonsultasi': 'Konsultasi Gratis',
+          'hero.btnLokasi': 'Lihat Lokasi',
+          'hero.stat1Label': 'Tahun Pengalaman',
+          'hero.stat2Label': 'Pelanggan Puas',
+          'hero.stat3Label': 'PC Dirakit',
+          'hero.stat4Label': 'Kasus Servis',
+          'hero.visualLabel': 'PC Gaming & Design',
+          'produk.badge': 'Produk',
+          'produk.title': 'Unggulan Kami',
+          'produk.desc': 'Berkualitas original, bergaransi, dan harga bersaing',
+          'produk.pcLabel': 'Rakitan PC',
+          'produk.pcTitle': 'PC Gaming Rakitan',
+          'produk.pcDesc': 'Konfigurasi sesuai kebutuhan dan budget Anda.',
+          'produk.pcPrice': 'Mulai Rp 5jt',
+          'produk.laptopLabel': 'Laptop',
+          'produk.laptopTitle': 'Laptop',
+          'produk.laptopDesc': 'Baru & segel, berbagai varian tersedia.',
+          'produk.laptopPrice': 'Mulai Rp 4jt',
+          'produk.printerLabel': 'Printer',
+          'produk.printerTitle': 'Printer HP & Epson',
+          'produk.printerDesc': 'Berbagai tipe untuk rumah dan kantor.',
+          'produk.printerPrice': 'Mulai Rp 1jt',
+          'produk.aksesLabel': 'Aksesaris',
+          'produk.aksesTitle': 'Mouse, Keyboard, RGB',
+          'produk.aksesDesc': 'Gaming dan kantor original.',
+          'produk.aksesPrice': 'Mulai Rp 100rb',
+          'produk.tanya': 'Tanya',
+          'layanan.badge': 'Layanan',
+          'layanan.title': 'Yang Kami Tawarkan',
+          'layanan.desc': 'Kepercayaan pelanggan adalah prioritas',
+          'layanan.1title': 'Rakitan PC Custom',
+          'layanan.1desc': 'Rakit PC sesuai kebutuhan gaming, kantor, editing dengan komponen terbaik.',
+          'layanan.2title': 'Laptop Baru',
+          'layanan.2desc': 'Laptop baru berbagai merek dengan harga kompetitif dan garansi resmi.',
+          'layanan.3title': 'Instalasi Software',
+          'layanan.3desc': 'Pasang Windows, Office, antivirus, dan aplikasi lainnya dengan teknisi berpengalaman.',
+          'layanan.4title': 'Printer & Aksesaris',
+          'layanan.4desc': 'Jual printer, cartridge, dan aksesaris komputer original dan bergaransi.',
+          'layanan.5title': 'Jemput & Kirim',
+          'layanan.5desc': 'Layanan antar jemput barang dengan ongkir kompetitif ke seluruh Bali.',
+          'layanan.6title': 'Servis & Perbaikan',
+          'layanan.6desc': 'Perbaiki hardware & software laptop dan PC dengan teknisi berpengalaman.',
+          'brands.badge': 'Brands',
+          'brands.title': 'Yang Kami Layanani',
+          'brands.desc': 'Bekerja sama dengan brand-brand terpercaya',
+          'benefits.badge': 'Keunggulan',
+          'benefits.title': 'Mengapa Memilih Kami',
+          'benefits.desc': 'Kami berkomitmen memberikan yang terbaik untuk Anda',
+          'benefits.1title': 'Harga Kompetitif',
+          'benefits.1desc': 'Harga terbaik di Denpasar dengan kualitas original. Tanpa biaya tersembunyi.',
+          'benefits.2title': 'Garansi Resmi',
+          'benefits.2desc': 'Semua produk bergaransi resmi distributor untuk rasa aman maksimal.',
+          'benefits.3title': 'Layanan Cepat',
+          'benefits.3desc': 'Respon cepat via WA dan telepon. Siap kirim/jemput sesuai kebutuhan.',
+          'benefits.4title': 'Teknisi Berpengalaman',
+          'benefits.4desc': 'Dioperasikan teknisi berpengalaman lebih dari 5 tahun.',
+          'benefits.5title': 'Konsultasi Gratis',
+          'benefits.5desc': 'Konsultasi kebutuhan komputer & laptop GRATIS tanpa harus beli.',
+          'benefits.6title': 'Pembayaran Fleksibel',
+          'benefits.6desc': 'Transfer, cash, atau cicilan untuk membeli nominal tertentu.',
+          'reviews.badge': 'Testimonial',
+          'reviews.title': 'Apa Kata Pelanggan',
+          'reviews.desc': 'Kepercayaan pelanggan adalah prioritas utama kami',
+          'reviews.1text': '"Pelayanan cepat dan ramah. PC rakitan saya bekerja dengan sangat baik. Recommended!"',
+          'reviews.1name': 'Andi',
+          'reviews.1role': 'Pelanggan Setia',
+          'reviews.2text': '"Laptop baru saya dikirim dengan aman. Harga lebih murah dari toko lain. Mantap!"',
+          'reviews.2name': 'Sari',
+          'reviews.2role': 'Pelanggan Setia',
+          'reviews.3text': '"Servis cepat, teknisi berpengalaman. Laptop saya yang bermasalah langsung beres. Terima kasih!"',
+          'reviews.3name': 'Budi',
+          'reviews.3role': 'Pelanggan Setia',
+          'reviews.googleLabel': 'Google Review — Tulis review',
+          'voucher.potongan': 'Potongan',
+          'voucher.minBelanja': 'MIN. BELANJA Rp100K',
+          'voucher.cara': 'Rating &amp; review bagus<br />+ screenshot halaman ini',
+          'voucher.tunjukin': 'Tunjukin ke kasir',
+          'voucher.syarat': '*Berlaku untuk 1 transaksi. Tidak dapat digabung dengan promo lain.',
+          'kontak.badge': 'Kontak',
+          'kontak.title': 'Temukan Kami',
+          'kontak.desc': 'Lokasi Media Computer Bali di Denpasar',
+          'kontak.header': 'Kontak & Alamat',
+          'kontak.alamatLabel': 'Alamat',
+          'kontak.teleponLabel': 'Telepon / WhatsApp',
+          'kontak.jamLabel': 'Jam Buka',
+          'kontak.jam1': 'Senin - Sabtu: 10:00 - 19:00',
+          'kontak.jam2': 'Minggu: 10:00 - 17:00',
+          'kontak.chatWa': 'Chat WhatsApp',
+          'kontak.telepon': 'Telepon',
+          'marketplace.badge': 'Marketplace',
+          'marketplace.title': 'Juga Tersedia Di',
+          'marketplace.desc': 'Temukan produk kami di marketplace favorit Anda',
+          'marketplace.visitTokped': 'Kunjungi Toko',
+          'marketplace.visitShopee': 'Kunjungi Toko',
+          'marketplace.visitIg': 'Ikuti Kami',
+          'footer.desc': 'Toko komputer, laptop, dan rakitan PC terpercaya di Denpasar, Bali. Melayani jual baru, servis, instalasi software, dan aksesoris.',
+          'footer.layanan': 'Layanan',
+          'footer.rakitanPc': 'Rakitan PC',
+          'footer.laptopBaru': 'Laptop Baru',
+          'footer.servis': 'Servis & Perbaikan',
+          'footer.instalasi': 'Instalasi Software',
+          'footer.kontak': 'Kontak',
+          'footer.ikuti': 'Ikuti Kami',
+          'bottom.lokasi': 'Lokasi',
+          'bottom.chatWa': 'Chat WA'
+        },
+        en: {
+          'nav.produk': 'Products',
+          'nav.layanan': 'Services',
+          'nav.brands': 'Brands',
+          'nav.kontak': 'Contact',
+          'nav.chatWa': 'Chat WA',
+          'hero.badge': 'Specialist PC Gaming & Design Architect Assembly',
+          'hero.title1': 'Computers & Laptops',
+          'hero.title2': 'Trusted',
+          'hero.title3': 'Bali',
+          'hero.preposition': 'in',
+          'hero.desc': 'New sales, PC assembly, accessories, printers, and software installation services. Pickup or delivery available at competitive rates.',
+          'hero.btnKonsultasi': 'Free Consultation',
+          'hero.btnLokasi': 'View Location',
+          'hero.stat1Label': 'Years Experience',
+          'hero.stat2Label': 'Happy Customers',
+          'hero.stat3Label': 'PCs Built',
+          'hero.stat4Label': 'Service Cases',
+          'hero.visualLabel': 'PC Gaming & Design',
+          'produk.badge': 'Products',
+          'produk.title': 'Our Featured',
+          'produk.desc': 'Original quality, warrantied, competitive prices',
+          'produk.pcLabel': 'PC Assembly',
+          'produk.pcTitle': 'Custom Gaming PC',
+          'produk.pcDesc': 'Configured to your needs and budget.',
+          'produk.pcPrice': 'From Rp 5jt',
+          'produk.laptopLabel': 'Laptops',
+          'produk.laptopTitle': 'Laptops',
+          'produk.laptopDesc': 'Brand new, various models available.',
+          'produk.laptopPrice': 'From Rp 4jt',
+          'produk.printerLabel': 'Printers',
+          'produk.printerTitle': 'HP & Epson Printers',
+          'produk.printerDesc': 'Various types for home and office.',
+          'produk.printerPrice': 'From Rp 1jt',
+          'produk.aksesLabel': 'Accessories',
+          'produk.aksesTitle': 'Mouse, Keyboard, RGB',
+          'produk.aksesDesc': 'Gaming and office originals.',
+          'produk.aksesPrice': 'From Rp 100rb',
+          'produk.tanya': 'Ask',
+          'layanan.badge': 'Services',
+          'layanan.title': 'What We Offer',
+          'layanan.desc': 'Customer trust is our priority',
+          'layanan.1title': 'Custom PC Assembly',
+          'layanan.1desc': 'Build PCs for gaming, office, editing with the best components.',
+          'layanan.2title': 'New Laptops',
+          'layanan.2desc': 'New laptops from various brands at competitive prices with official warranty.',
+          'layanan.3title': 'Software Installation',
+          'layanan.3desc': 'Install Windows, Office, antivirus, and other apps by experienced technicians.',
+          'layanan.4title': 'Printers & Accessories',
+          'layanan.4desc': 'Sell printers, cartridges, and original warrantied computer accessories.',
+          'layanan.5title': 'Pickup & Delivery',
+          'layanan.5desc': 'Free pickup and delivery service with competitive rates all across Bali.',
+          'layanan.6title': 'Service & Repair',
+          'layanan.6desc': 'Fix laptop and PC hardware & software with experienced technicians.',
+          'brands.badge': 'Brands',
+          'brands.title': 'Brands We Carry',
+          'brands.desc': 'Partnering with trusted brands',
+          'benefits.badge': 'Advantages',
+          'benefits.title': 'Why Choose Us',
+          'benefits.desc': 'We are committed to giving you the best',
+          'benefits.1title': 'Competitive Prices',
+          'benefits.1desc': 'Best prices in Denpasar with original quality. No hidden fees.',
+          'benefits.2title': 'Official Warranty',
+          'benefits.2desc': 'All products come with official distributor warranty for peace of mind.',
+          'benefits.3title': 'Fast Service',
+          'benefits.3desc': 'Quick response via WA and phone. Ready to deliver/pickup as needed.',
+          'benefits.4title': 'Experienced Technicians',
+          'benefits.4desc': 'Operated by technicians with more than 5 years of experience.',
+          'benefits.5title': 'Free Consultation',
+          'benefits.5desc': 'FREE consultation on computer & laptop needs without any purchase obligation.',
+          'benefits.6title': 'Flexible Payment',
+          'benefits.6desc': 'Transfer, cash, or installment plans for certain nominal purchases.',
+          'reviews.badge': 'Testimonials',
+          'reviews.title': 'What Customers Say',
+          'reviews.desc': 'Customer trust is our top priority',
+          'reviews.1text': '"Fast and friendly service. My custom PC works great. Highly recommended!"',
+          'reviews.1name': 'Andi',
+          'reviews.1role': 'Loyal Customer',
+          'reviews.2text': '"My new laptop was delivered safely. Cheaper than other stores. Awesome!"',
+          'reviews.2name': 'Sari',
+          'reviews.2role': 'Loyal Customer',
+          'reviews.3text': '"Quick service, experienced technicians. My problematic laptop was fixed right away. Thank you!"',
+          'reviews.3name': 'Budi',
+          'reviews.3role': 'Loyal Customer',
+          'reviews.googleLabel': 'Google Review — Write a review',
+          'voucher.potongan': 'Discount',
+          'voucher.minBelanja': 'MIN. PURCHASE Rp100K',
+          'voucher.cara': 'Good rating &amp; review<br />+ screenshot this page',
+          'voucher.tunjukin': 'Show to cashier',
+          'voucher.syarat': '*Valid for 1 transaction. Cannot be combined with other promotions.',
+          'kontak.badge': 'Contact',
+          'kontak.title': 'Find Us',
+          'kontak.desc': 'Media Computer Bali location in Denpasar',
+          'kontak.header': 'Contact & Address',
+          'kontak.alamatLabel': 'Address',
+          'kontak.teleponLabel': 'Phone / WhatsApp',
+          'kontak.jamLabel': 'Opening Hours',
+          'kontak.jam1': 'Mon - Sat: 10:00 - 19:00',
+          'kontak.jam2': 'Sun: 10:00 - 17:00',
+          'kontak.chatWa': 'Chat WhatsApp',
+          'kontak.telepon': 'Call',
+          'marketplace.badge': 'Marketplace',
+          'marketplace.title': 'Also Available At',
+          'marketplace.desc': 'Find our products at your favorite marketplace',
+          'marketplace.visitTokped': 'Visit Store',
+          'marketplace.visitShopee': 'Visit Store',
+          'marketplace.visitIg': 'Follow Us',
+          'footer.desc': 'Trusted computer, laptop, and PC assembly store in Denpasar, Bali. New sales, service, software installation, and accessories.',
+          'footer.layanan': 'Services',
+          'footer.rakitanPc': 'PC Assembly',
+          'footer.laptopBaru': 'New Laptops',
+          'footer.servis': 'Service & Repair',
+          'footer.instalasi': 'Software Installation',
+          'footer.kontak': 'Contact',
+          'footer.ikuti': 'Follow Us',
+          'bottom.lokasi': 'Location',
+          'bottom.chatWa': 'Chat WA'
+        }
+      };
+      var currentLang = localStorage.getItem('lang') || 'id';
+      function setLang(lang) {
+        currentLang = lang;
+        localStorage.setItem('lang', lang);
+        document.documentElement.lang = lang === 'id' ? 'id' : 'en';
+        var els = document.querySelectorAll('[data-i18n]');
+        for (var i = 0; i < els.length; i++) {
+          var key = els[i].getAttribute('data-i18n');
+          if (langData[lang] && langData[lang][key] !== undefined) {
+            els[i].innerHTML = langData[lang][key];
+          }
+        }
+        var toggleBtn = document.getElementById('lang-toggle');
+        var toggleBtnM = document.getElementById('lang-toggle-mobile');
+        var label = lang === 'en' ? 'ID' : 'EN';
+        if (toggleBtn) toggleBtn.textContent = label;
+        if (toggleBtnM) toggleBtnM.textContent = label;
+      }
+      document.addEventListener('DOMContentLoaded', function() {
+        setLang(currentLang);
+        var toggleBtn = document.getElementById('lang-toggle');
+        var toggleBtnM = document.getElementById('lang-toggle-mobile');
+        function toggleLang() {
+          setLang(currentLang === 'id' ? 'en' : 'id');
+        }
+        if (toggleBtn) toggleBtn.addEventListener('click', toggleLang);
+        if (toggleBtnM) toggleBtnM.addEventListener('click', toggleLang);
+        // Also update title on toggle
+        var originalSetLang = setLang;
+        setLang = function(lang) {
+          originalSetLang(lang);
+          document.title = lang === 'id'
+            ? 'Media Computer Bali - Toko Komputer, Laptop & Rakitan PC Denpasar | Harga Kompetitif'
+            : 'Media Computer Bali - Computer, Laptop & PC Assembly Store Denpasar | Competitive Prices';
+        };
+        setLang(currentLang);
+      });
+
+      // Mobile menu
+      var menuBtn = document.getElementById('menu-btn');
+      var mobileMenu = document.getElementById('mobile-menu');
+      var menuIcon = document.getElementById('menu-icon');
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', function() {
+          mobileMenu.classList.toggle('translate-x-full');
+          mobileMenu.classList.toggle('opacity-0');
+          mobileMenu.classList.toggle('opacity-100');
+          if (menuIcon.classList.contains('ri-menu-line')) {
+            menuIcon.className = 'ri-close-line text-xl';
+          } else {
+            menuIcon.className = 'ri-menu-line text-xl';
+          }
+          document.body.style.overflow = document.body.style.overflow === 'hidden' ? '' : 'hidden';
+        });
+        mobileMenu.querySelectorAll('a').forEach(function(link) {
+          link.addEventListener('click', function() {
+            mobileMenu.classList.add('translate-x-full');
+            mobileMenu.classList.add('opacity-0');
+            mobileMenu.classList.remove('opacity-100');
+            menuIcon.className = 'ri-menu-line text-xl';
+            document.body.style.overflow = '';
+          });
+        });
+      }
+
+      // Marquee duplicate
+      var marquee = document.querySelector('.animate-marquee');
+      if (marquee) {
+        marquee.innerHTML += marquee.innerHTML;
+      }
+
+      // Scroll animations (Intersection Observer)
+      var reveals = document.querySelectorAll('.reveal');
+      if (reveals.length > 0 && 'IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+        reveals.forEach(function(el) { observer.observe(el); });
+      } else {
+        reveals.forEach(function(el) { el.classList.add('visible'); });
+      }
+
+      // Scroll to top button
+      var scrollBtn = document.getElementById('scroll-top');
+      if (scrollBtn) {
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > 600) {
+            scrollBtn.classList.remove('hidden');
+          } else {
+            scrollBtn.classList.add('hidden');
+          }
+        });
+        scrollBtn.addEventListener('click', function() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+    </script>
+  </body>
+</html>
