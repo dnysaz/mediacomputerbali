@@ -1,35 +1,94 @@
----
-const benefits = [
-  { title: 'Harga Kompetitif', desc: 'Harga terbaik di Denpasar dengan kualitas original.', icon: 'ri-money-dollar-circle-line' },
-  { title: 'Garansi Resmi', desc: 'Semua produk bergaransi resmi distributor.', icon: 'ri-shield-check-line' },
-  { title: 'Layanan Cepat', desc: 'Respon cepat via WA dan telepon. Siap kirim/jemput.', icon: 'ri-flashlight-line' },
-  { title: 'Teknisi Berpengalaman', desc: 'Ditenagai teknisi berpengalaman lebih dari 5 tahun.', icon: 'ri-tools-line' },
-  { title: 'Konsultasi Gratis', desc: 'Konsultasi kebutuhan komputer & laptop GRATIS.', icon: 'ri-lightbulb-line' },
-  { title: 'Pembayaran Fleksibel', desc: 'Transfer, cash, atau cicilan untuk harga tertentu.', icon: 'ri-bank-card-line' },
-];
----
-
-<section class="bg-white">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-    <div class="text-center mb-14">
-      <h2 class="text-3xl sm:text-4xl font-extrabold text-baseText">Mengapa Memilih Kami</h2>
-      <p class="mt-4 text-lg text-subText">Keunggulan yang membuat Anda percaya</p>
+<section class="bg-slate-50/80 border-y border-slate-200">
+  <div class="mx-auto max-w-7xl px-6 py-20 sm:py-28">
+    <div class="text-center mb-16">
+      <div class="reveal">
+        <span class="inline-flex items-center gap-2 rounded-full bg-emerald-50 border border-emerald-200/60 px-4 py-1.5 text-xs font-bold text-emerald-700 mb-3">
+          <i class="ri-star-line text-xs"></i>
+          <span data-i18n="benefits.badge">Keunggulan</span>
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3" data-i18n="benefits.title">Mengapa Memilih Kami</h2>
+        <p class="mt-3 text-slate-500" data-i18n="benefits.desc">Kami berkomitmen memberikan yang terbaik untuk Anda</p>
+      </div>
     </div>
+
     <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      {benefits.map((item) => (
-        <div
-          key={item.title}
-          class="flex items-start gap-4 rounded-2xl bg-muted p-6 border border-line hover:border-nvidia/40 hover:shadow-md transition-all duration-200"
-        >
-          <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-white border border-line">
-            <i class="{item.icon} text-2xl text-emerald-600"></i>
+      <div class="reveal group rounded-xl bg-white p-6 border border-slate-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+        <div class="flex items-start gap-4">
+          <div class="h-12 w-12 shrink-0 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-md">
+            <i class="ri-money-dollar-circle-line text-xl text-white"></i>
           </div>
           <div>
-            <h3 class="text-lg font-bold text-baseText">{item.title}</h3>
-            <p class="mt-1 text-subText text-sm leading-relaxed">{item.desc}</p>
+            <p class="text-[11px] font-bold text-emerald-600 uppercase tracking-widest mb-0.5">01</p>
+            <h3 class="text-base font-extrabold text-slate-900" data-i18n="benefits.1title">Harga Kompetitif</h3>
+            <p class="mt-1 text-[13px] text-slate-500 leading-relaxed" data-i18n="benefits.1desc">Harga terbaik di Denpasar dengan kualitas original. Tanpa biaya tersembunyi.</p>
           </div>
         </div>
-      ))}
+      </div>
+
+      <div class="reveal group rounded-xl bg-white p-6 border border-slate-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300" style="transition-delay:0.05s">
+        <div class="flex items-start gap-4">
+          <div class="h-12 w-12 shrink-0 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-md">
+            <i class="ri-shield-check-line text-xl text-white"></i>
+          </div>
+          <div>
+            <p class="text-[11px] font-bold text-emerald-600 uppercase tracking-widest mb-0.5">02</p>
+            <h3 class="text-base font-extrabold text-slate-900" data-i18n="benefits.2title">Garansi Resmi</h3>
+            <p class="mt-1 text-[13px] text-slate-500 leading-relaxed" data-i18n="benefits.2desc">Semua produk bergaransi resmi distributor untuk rasa aman maksimal.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal group rounded-xl bg-white p-6 border border-slate-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300" style="transition-delay:0.1s">
+        <div class="flex items-start gap-4">
+          <div class="h-12 w-12 shrink-0 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-md">
+            <i class="ri-flashlight-line text-xl text-white"></i>
+          </div>
+          <div>
+            <p class="text-[11px] font-bold text-emerald-600 uppercase tracking-widest mb-0.5">03</p>
+            <h3 class="text-base font-extrabold text-slate-900" data-i18n="benefits.3title">Layanan Cepat</h3>
+            <p class="mt-1 text-[13px] text-slate-500 leading-relaxed" data-i18n="benefits.3desc">Respon cepat via WA dan telepon. Siap kirim/jemput sesuai kebutuhan.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal group rounded-xl bg-white p-6 border border-slate-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300" style="transition-delay:0.15s">
+        <div class="flex items-start gap-4">
+          <div class="h-12 w-12 shrink-0 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-md">
+            <i class="ri-tools-line text-xl text-white"></i>
+          </div>
+          <div>
+            <p class="text-[11px] font-bold text-emerald-600 uppercase tracking-widest mb-0.5">04</p>
+            <h3 class="text-base font-extrabold text-slate-900" data-i18n="benefits.4title">Teknisi Berpengalaman</h3>
+            <p class="mt-1 text-[13px] text-slate-500 leading-relaxed" data-i18n="benefits.4desc">Dioperasikan teknisi berpengalaman lebih dari 5 tahun.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal group rounded-xl bg-white p-6 border border-slate-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300" style="transition-delay:0.2s">
+        <div class="flex items-start gap-4">
+          <div class="h-12 w-12 shrink-0 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-md">
+            <i class="ri-lightbulb-line text-xl text-white"></i>
+          </div>
+          <div>
+            <p class="text-[11px] font-bold text-emerald-600 uppercase tracking-widest mb-0.5">05</p>
+            <h3 class="text-base font-extrabold text-slate-900" data-i18n="benefits.5title">Konsultasi Gratis</h3>
+            <p class="mt-1 text-[13px] text-slate-500 leading-relaxed" data-i18n="benefits.5desc">Konsultasi kebutuhan komputer & laptop GRATIS tanpa harus beli.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal group rounded-xl bg-white p-6 border border-slate-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300" style="transition-delay:0.25s">
+        <div class="flex items-start gap-4">
+          <div class="h-12 w-12 shrink-0 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-md">
+            <i class="ri-bank-card-line text-xl text-white"></i>
+          </div>
+          <div>
+            <p class="text-[11px] font-bold text-emerald-600 uppercase tracking-widest mb-0.5">06</p>
+            <h3 class="text-base font-extrabold text-slate-900" data-i18n="benefits.6title">Pembayaran Fleksibel</h3>
+            <p class="mt-1 text-[13px] text-slate-500 leading-relaxed" data-i18n="benefits.6desc">Transfer, cash, atau cicilan untuk membeli nominal tertentu.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

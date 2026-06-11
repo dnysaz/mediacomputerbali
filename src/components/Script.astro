@@ -1,0 +1,340 @@
+<script is:inline>
+  var langData = {
+    id: {
+      'nav.produk': 'Produk',
+      'nav.layanan': 'Layanan',
+      'nav.brands': 'Brands',
+      'nav.kontak': 'Kontak',
+      'nav.chatWa': 'Chat WA',
+      'hero.badge': 'Spesialis Rakit PC Gaming & Design Arsitek',
+      'hero.title1': 'Komputer & Laptop',
+      'hero.title2': 'Terpercaya',
+      'hero.title3': 'Bali',
+      'hero.preposition': 'di',
+      'hero.desc': 'Jual baru, rakitan PC, aksesaris, printer, dan jasa instalasi software. Bisa dijemput atau dikirim ke rumah dengan ongkir kompetitif.',
+      'hero.btnKonsultasi': 'Konsultasi Gratis',
+      'hero.btnLokasi': 'Lihat Lokasi',
+      'hero.stat1Label': 'Tahun Pengalaman',
+      'hero.stat2Label': 'Pelanggan Puas',
+      'hero.stat3Label': 'PC Dirakit',
+      'hero.stat4Label': 'Kasus Servis',
+      'hero.visualLabel': 'PC Gaming & Design',
+      'produk.badge': 'Produk',
+      'produk.title': 'Unggulan Kami',
+      'produk.desc': 'Berkualitas original, bergaransi, dan harga bersaing',
+      'produk.pcLabel': 'Rakitan PC',
+      'produk.pcTitle': 'PC Gaming Rakitan',
+      'produk.pcDesc': 'Konfigurasi sesuai kebutuhan dan budget Anda.',
+      'produk.pcPrice': 'Mulai Rp 5jt',
+      'produk.laptopLabel': 'Laptop',
+      'produk.laptopTitle': 'Laptop',
+      'produk.laptopDesc': 'Baru & segel, berbagai varian tersedia.',
+      'produk.laptopPrice': 'Mulai Rp 4jt',
+      'produk.printerLabel': 'Printer',
+      'produk.printerTitle': 'Printer HP & Epson',
+      'produk.printerDesc': 'Berbagai tipe untuk rumah dan kantor.',
+      'produk.printerPrice': 'Mulai Rp 1jt',
+      'produk.aksesLabel': 'Aksesaris',
+      'produk.aksesTitle': 'Mouse, Keyboard, RGB',
+      'produk.aksesDesc': 'Gaming dan kantor original.',
+      'produk.aksesPrice': 'Mulai Rp 100rb',
+      'produk.tanya': 'Tanya',
+      'layanan.badge': 'Layanan',
+      'layanan.title': 'Yang Kami Tawarkan',
+      'layanan.desc': 'Kepercayaan pelanggan adalah prioritas',
+      'layanan.1title': 'Rakitan PC Custom',
+      'layanan.1desc': 'Rakit PC sesuai kebutuhan gaming, kantor, editing dengan komponen terbaik.',
+      'layanan.2title': 'Laptop Baru',
+      'layanan.2desc': 'Laptop baru berbagai merek dengan harga kompetitif dan garansi resmi.',
+      'layanan.3title': 'Instalasi Software',
+      'layanan.3desc': 'Pasang Windows, Office, antivirus, dan aplikasi lainnya dengan teknisi berpengalaman.',
+      'layanan.4title': 'Printer & Aksesaris',
+      'layanan.4desc': 'Jual printer, cartridge, dan aksesaris komputer original dan bergaransi.',
+      'layanan.5title': 'Jemput & Kirim',
+      'layanan.5desc': 'Layanan antar jemput barang dengan ongkir kompetitif ke seluruh Bali.',
+      'layanan.6title': 'Servis & Perbaikan',
+      'layanan.6desc': 'Perbaiki hardware & software laptop dan PC dengan teknisi berpengalaman.',
+      'brands.badge': 'Brands',
+      'brands.title': 'Yang Kami Layani',
+      'brands.desc': 'Bekerja sama dengan brand-brand terpercaya',
+      'benefits.badge': 'Keunggulan',
+      'benefits.title': 'Mengapa Memilih Kami',
+      'benefits.desc': 'Kami berkomitmen memberikan yang terbaik untuk Anda',
+      'benefits.1title': 'Harga Kompetitif',
+      'benefits.1desc': 'Harga terbaik di Denpasar dengan kualitas original. Tanpa biaya tersembunyi.',
+      'benefits.2title': 'Garansi Resmi',
+      'benefits.2desc': 'Semua produk bergaransi resmi distributor untuk rasa aman maksimal.',
+      'benefits.3title': 'Layanan Cepat',
+      'benefits.3desc': 'Respon cepat via WA dan telepon. Siap kirim/jemput sesuai kebutuhan.',
+      'benefits.4title': 'Teknisi Berpengalaman',
+      'benefits.4desc': 'Dioperasikan teknisi berpengalaman lebih dari 5 tahun.',
+      'benefits.5title': 'Konsultasi Gratis',
+      'benefits.5desc': 'Konsultasi kebutuhan komputer & laptop GRATIS tanpa harus beli.',
+      'benefits.6title': 'Pembayaran Fleksibel',
+      'benefits.6desc': 'Transfer, cash, atau cicilan untuk membeli nominal tertentu.',
+      'reviews.badge': 'Testimonial',
+      'reviews.title': 'Apa Kata Pelanggan',
+      'reviews.desc': 'Kepercayaan pelanggan adalah prioritas utama kami',
+      'reviews.1text': '"Pelayanan cepat dan ramah. PC rakitan saya bekerja dengan sangat baik. Recommended!"',
+      'reviews.1name': 'Andi',
+      'reviews.1role': 'Pelanggan Setia',
+      'reviews.2text': '"Laptop baru saya dikirim dengan aman. Harga lebih murah dari toko lain. Mantap!"',
+      'reviews.2name': 'Sari',
+      'reviews.2role': 'Pelanggan Setia',
+      'reviews.3text': '"Servis cepat, teknisi berpengalaman. Laptop saya yang bermasalah langsung beres. Terima kasih!"',
+      'reviews.3name': 'Budi',
+      'reviews.3role': 'Pelanggan Setia',
+      'reviews.googleLabel': 'Google Review — Tulis review',
+      'voucher.potongan': 'Potongan',
+      'voucher.minBelanja': 'MIN. BELANJA Rp100K',
+      'voucher.cara': 'Rating & review bagus<br />+ screenshot halaman ini',
+      'voucher.tunjukin': 'Tunjukin ke kasir',
+      'voucher.syarat': '*Berlaku untuk 1 transaksi. Tidak dapat digabung dengan promo lain.',
+      'kontak.badge': 'Kontak',
+      'kontak.title': 'Temukan Kami',
+      'kontak.desc': 'Lokasi Media Computer Bali di Denpasar',
+      'kontak.header': 'Kontak & Alamat',
+      'kontak.alamatLabel': 'Alamat',
+      'kontak.teleponLabel': 'Telepon / WhatsApp',
+      'kontak.jamLabel': 'Jam Buka',
+      'kontak.jam1': 'Senin - Sabtu: 10:00 - 19:00',
+      'kontak.jam2': 'Minggu: 10:00 - 17:00',
+      'kontak.chatWa': 'Chat WhatsApp',
+      'kontak.telepon': 'Telepon',
+      'marketplace.badge': 'Marketplace',
+      'marketplace.title': 'Juga Tersedia Di',
+      'marketplace.desc': 'Temukan produk kami di marketplace favorit Anda',
+      'marketplace.visitTokped': 'Kunjungi Toko',
+      'marketplace.visitShopee': 'Kunjungi Toko',
+      'marketplace.visitIg': 'Ikuti Kami',
+      'footer.desc': 'Toko komputer, laptop, dan rakitan PC terpercaya di Denpasar, Bali. Melayani jual baru, servis, instalasi software, dan aksesaris.',
+      'footer.layanan': 'Layanan',
+      'footer.rakitanPc': 'Rakitan PC',
+      'footer.laptopBaru': 'Laptop Baru',
+      'footer.servis': 'Servis & Perbaikan',
+      'footer.instalasi': 'Instalasi Software',
+      'footer.kontak': 'Kontak',
+      'footer.ikuti': 'Ikuti Kami',
+      'bottom.lokasi': 'Lokasi',
+      'bottom.chatWa': 'Chat WA'
+    },
+    en: {
+      'nav.produk': 'Products',
+      'nav.layanan': 'Services',
+      'nav.brands': 'Brands',
+      'nav.kontak': 'Contact',
+      'nav.chatWa': 'Chat WA',
+      'hero.badge': 'Specialist PC Gaming & Design Architect Assembly',
+      'hero.title1': 'Computers & Laptops',
+      'hero.title2': 'Trusted',
+      'hero.title3': 'Bali',
+      'hero.preposition': 'in',
+      'hero.desc': 'New sales, PC assembly, accessories, printers, and software installation services. Pickup or delivery available at competitive rates.',
+      'hero.btnKonsultasi': 'Free Consultation',
+      'hero.btnLokasi': 'View Location',
+      'hero.stat1Label': 'Years Experience',
+      'hero.stat2Label': 'Happy Customers',
+      'hero.stat3Label': 'PCs Built',
+      'hero.stat4Label': 'Service Cases',
+      'hero.visualLabel': 'PC Gaming & Design',
+      'produk.badge': 'Products',
+      'produk.title': 'Our Featured',
+      'produk.desc': 'Original quality, warrantied, competitive prices',
+      'produk.pcLabel': 'PC Assembly',
+      'produk.pcTitle': 'Custom Gaming PC',
+      'produk.pcDesc': 'Configured to your needs and budget.',
+      'produk.pcPrice': 'From Rp 5jt',
+      'produk.laptopLabel': 'Laptops',
+      'produk.laptopTitle': 'Laptops',
+      'produk.laptopDesc': 'Brand new, various models available.',
+      'produk.laptopPrice': 'From Rp 4jt',
+      'produk.printerLabel': 'Printers',
+      'produk.printerTitle': 'HP & Epson Printers',
+      'produk.printerDesc': 'Various types for home and office.',
+      'produk.printerPrice': 'From Rp 1jt',
+      'produk.aksesLabel': 'Accessories',
+      'produk.aksesTitle': 'Mouse, Keyboard, RGB',
+      'produk.aksesDesc': 'Gaming and office originals.',
+      'produk.aksesPrice': 'From Rp 100rb',
+      'produk.tanya': 'Ask',
+      'layanan.badge': 'Services',
+      'layanan.title': 'What We Offer',
+      'layanan.desc': 'Customer trust is our priority',
+      'layanan.1title': 'Custom PC Assembly',
+      'layanan.1desc': 'Build PCs for gaming, office, editing with the best components.',
+      'layanan.2title': 'New Laptops',
+      'layanan.2desc': 'New laptops from various brands at competitive prices with official warranty.',
+      'layanan.3title': 'Software Installation',
+      'layanan.3desc': 'Install Windows, Office, antivirus, and other apps by experienced technicians.',
+      'layanan.4title': 'Printers & Accessories',
+      'layanan.4desc': 'Sell printers, cartridges, and original warrantied computer accessories.',
+      'layanan.5title': 'Pickup & Delivery',
+      'layanan.5desc': 'Free pickup and delivery service with competitive rates all across Bali.',
+      'layanan.6title': 'Service & Repair',
+      'layanan.6desc': 'Fix laptop and PC hardware & software with experienced technicians.',
+      'brands.badge': 'Brands',
+      'brands.title': 'Brands We Carry',
+      'brands.desc': 'Partnering with trusted brands',
+      'benefits.badge': 'Advantages',
+      'benefits.title': 'Why Choose Us',
+      'benefits.desc': 'We are committed to giving you the best',
+      'benefits.1title': 'Competitive Prices',
+      'benefits.1desc': 'Best prices in Denpasar with original quality. No hidden fees.',
+      'benefits.2title': 'Official Warranty',
+      'benefits.2desc': 'All products come with official distributor warranty for peace of mind.',
+      'benefits.3title': 'Fast Service',
+      'benefits.3desc': 'Quick response via WA and phone. Ready to deliver/pickup as needed.',
+      'benefits.4title': 'Experienced Technicians',
+      'benefits.4desc': 'Operated by technicians with more than 5 years of experience.',
+      'benefits.5title': 'Free Consultation',
+      'benefits.5desc': 'FREE consultation on computer & laptop needs without any purchase obligation.',
+      'benefits.6title': 'Flexible Payment',
+      'benefits.6desc': 'Transfer, cash, or installment plans for certain nominal purchases.',
+      'reviews.badge': 'Testimonials',
+      'reviews.title': 'What Customers Say',
+      'reviews.desc': 'Customer trust is our top priority',
+      'reviews.1text': '"Fast and friendly service. My custom PC works great. Highly recommended!"',
+      'reviews.1name': 'Andi',
+      'reviews.1role': 'Loyal Customer',
+      'reviews.2text': '"My new laptop was delivered safely. Cheaper than other stores. Awesome!"',
+      'reviews.2name': 'Sari',
+      'reviews.2role': 'Loyal Customer',
+      'reviews.3text': '"Quick service, experienced technicians. My problematic laptop was fixed right away. Thank you!"',
+      'reviews.3name': 'Budi',
+      'reviews.3role': 'Loyal Customer',
+      'reviews.googleLabel': 'Google Review — Write a review',
+      'voucher.potongan': 'Discount',
+      'voucher.minBelanja': 'MIN. PURCHASE Rp100K',
+      'voucher.cara': 'Good rating & review<br />+ screenshot this page',
+      'voucher.tunjukin': 'Show to cashier',
+      'voucher.syarat': '*Valid for 1 transaction. Cannot be combined with other promotions.',
+      'kontak.badge': 'Contact',
+      'kontak.title': 'Find Us',
+      'kontak.desc': 'Media Computer Bali location in Denpasar',
+      'kontak.header': 'Contact & Address',
+      'kontak.alamatLabel': 'Address',
+      'kontak.teleponLabel': 'Phone / WhatsApp',
+      'kontak.jamLabel': 'Opening Hours',
+      'kontak.jam1': 'Mon - Sat: 10:00 - 19:00',
+      'kontak.jam2': 'Sun: 10:00 - 17:00',
+      'kontak.chatWa': 'Chat WhatsApp',
+      'kontak.telepon': 'Call',
+      'marketplace.badge': 'Marketplace',
+      'marketplace.title': 'Also Available At',
+      'marketplace.desc': 'Find our products at your favorite marketplace',
+      'marketplace.visitTokped': 'Visit Store',
+      'marketplace.visitShopee': 'Visit Store',
+      'marketplace.visitIg': 'Follow Us',
+      'footer.desc': 'Trusted computer, laptop, and PC assembly store in Denpasar, Bali. New sales, service, software installation, and accessories.',
+      'footer.layanan': 'Services',
+      'footer.rakitanPc': 'PC Assembly',
+      'footer.laptopBaru': 'New Laptops',
+      'footer.servis': 'Service & Repair',
+      'footer.instalasi': 'Software Installation',
+      'footer.kontak': 'Contact',
+      'footer.ikuti': 'Follow Us',
+      'bottom.lokasi': 'Location',
+      'bottom.chatWa': 'Chat WA'
+    }
+  };
+  var currentLang = localStorage.getItem('lang') || 'id';
+  function setLang(lang) {
+    currentLang = lang;
+    localStorage.setItem('lang', lang);
+    document.documentElement.lang = lang === 'id' ? 'id' : 'en';
+    var els = document.querySelectorAll('[data-i18n]');
+    for (var i = 0; i < els.length; i++) {
+      var key = els[i].getAttribute('data-i18n');
+      if (langData[lang] && langData[lang][key] !== undefined) {
+        els[i].innerHTML = langData[lang][key];
+      }
+    }
+    var toggleBtn = document.getElementById('lang-toggle');
+    var toggleBtnM = document.getElementById('lang-toggle-mobile');
+    var label = lang === 'en' ? 'ID' : 'EN';
+    if (toggleBtn) toggleBtn.textContent = label;
+    if (toggleBtnM) toggleBtnM.textContent = label;
+  }
+  document.addEventListener('DOMContentLoaded', function() {
+    setLang(currentLang);
+    var toggleBtn = document.getElementById('lang-toggle');
+    var toggleBtnM = document.getElementById('lang-toggle-mobile');
+    function toggleLang() {
+      setLang(currentLang === 'id' ? 'en' : 'id');
+    }
+    if (toggleBtn) toggleBtn.addEventListener('click', toggleLang);
+    if (toggleBtnM) toggleBtnM.addEventListener('click', toggleLang);
+    var originalSetLang = setLang;
+    setLang = function(lang) {
+      originalSetLang(lang);
+      document.title = lang === 'id'
+        ? 'Media Computer Bali - Toko Komputer, Laptop & Rakitan PC Denpasar | Harga Kompetitif'
+        : 'Media Computer Bali - Computer, Laptop & PC Assembly Store Denpasar | Competitive Prices';
+    };
+    setLang(currentLang);
+  });
+
+  // Mobile menu
+  var menuBtn = document.getElementById('menu-btn');
+  var mobileMenu = document.getElementById('mobile-menu');
+  var menuIcon = document.getElementById('menu-icon');
+  if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener('click', function() {
+      mobileMenu.classList.toggle('translate-x-full');
+      mobileMenu.classList.toggle('opacity-0');
+      mobileMenu.classList.toggle('opacity-100');
+      if (menuIcon.classList.contains('ri-menu-line')) {
+        menuIcon.className = 'ri-close-line text-xl';
+      } else {
+        menuIcon.className = 'ri-menu-line text-xl';
+      }
+      document.body.style.overflow = document.body.style.overflow === 'hidden' ? '' : 'hidden';
+    });
+    mobileMenu.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        mobileMenu.classList.add('translate-x-full');
+        mobileMenu.classList.add('opacity-0');
+        mobileMenu.classList.remove('opacity-100');
+        menuIcon.className = 'ri-menu-line text-xl';
+        document.body.style.overflow = '';
+      });
+    });
+  }
+
+  // Marquee duplicate
+  var marquee = document.querySelector('.animate-marquee');
+  if (marquee) {
+    marquee.innerHTML += marquee.innerHTML;
+  }
+
+  // Scroll animations (Intersection Observer)
+  var reveals = document.querySelectorAll('.reveal');
+  if (reveals.length > 0 && 'IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    reveals.forEach(function(el) { observer.observe(el); });
+  } else {
+    reveals.forEach(function(el) { el.classList.add('visible'); });
+  }
+
+  // Scroll to top button
+  var scrollBtn = document.getElementById('scroll-top');
+  if (scrollBtn) {
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 600) {
+        scrollBtn.classList.remove('hidden');
+      } else {
+        scrollBtn.classList.add('hidden');
+      }
+    });
+    scrollBtn.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+</script>

@@ -1,39 +1,39 @@
----
-const nav = [
-  { name: 'Beranda', href: '#' },
-  { name: 'Produk', href: '#produk' },
-  { name: 'Layanan', href: '#layanan' },
-  { name: 'Merk', href: '#merk' },
-  { name: 'Kontak', href: '#kontak' },
-];
----
+<nav class="fixed top-0 inset-x-0 z-50 bg-white/85 backdrop-blur-xl border-b border-slate-200/80">
+  <div class="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-2.5 group">
+      <div class="h-9 w-9 rounded-lg bg-gradient-to-br from-emerald-500 to-emerald-700 text-white grid place-items-center font-extrabold text-sm tracking-tight shadow-sm transition-transform group-hover:scale-105">MCB</div>
+      <span class="text-[15px] font-extrabold text-slate-900 leading-none">Media Computer Bali</span>
+    </a>
 
-<header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
-  <nav class="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
-        <a href="#" class="flex items-center gap-2.5">
-          <div class="h-9 w-9 rounded bg-emerald-500 text-white grid place-items-center font-extrabold text-sm tracking-tight">MCB</div>
-          <div>
-            <span class="text-[15px] font-extrabold text-slate-900 leading-none">Media Computer Bali</span>
-          </div>
-        </a>
-
-    <div class="hidden md:flex items-center gap-8">
-      {nav.map((item) => (
-        <a
-          href={item.href}
-          class="text-[13px] font-semibold text-slate-600 hover:text-slate-900 transition-colors"
-        >
-          {item.name}
-        </a>
-      ))}
-      <a
-        href="https://wa.me/6285738627984"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-[13px] font-extrabold px-5 py-2.5 transition-colors"
-      >
-        Chat WA
+    <div class="hidden md:flex items-center gap-3">
+      <a href="#produk" class="text-[13px] font-semibold text-slate-600 hover:text-emerald-600 transition-colors relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[2px] after:bg-emerald-500 after:transition-all hover:after:w-full" data-i18n="nav.produk">Produk</a>
+      <a href="#layanan" class="text-[13px] font-semibold text-slate-600 hover:text-emerald-600 transition-colors relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[2px] after:bg-emerald-500 after:transition-all hover:after:w-full" data-i18n="nav.layanan">Layanan</a>
+      <a href="#brands" class="text-[13px] font-semibold text-slate-600 hover:text-emerald-600 transition-colors relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[2px] after:bg-emerald-500 after:transition-all hover:after:w-full" data-i18n="nav.brands">Brands</a>
+      <a href="#kontak" class="text-[13px] font-semibold text-slate-600 hover:text-emerald-600 transition-colors relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[2px] after:bg-emerald-500 after:transition-all hover:after:w-full" data-i18n="nav.kontak">Kontak</a>
+      <button id="lang-toggle" class="h-9 w-9 rounded-lg border border-slate-200 text-slate-600 hover:bg-emerald-50 hover:text-emerald-600 hover:border-emerald-200 transition-all text-xs font-extrabold" aria-label="Toggle language">EN</button>
+      <a href="https://wa.me/6285738627984?text=Halo%20Admin%2C%20saya%20mau%20konsultasi%20rakit%20pc%20atau%20laptop%20baru%20bisa%3F" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-700 hover:to-emerald-600 text-white text-[13px] font-extrabold px-5 py-2.5 rounded-lg transition-all shadow-md hover:shadow-lg hover:shadow-emerald-500/25 active:scale-95">
+        <i class="ri-whatsapp-fill text-sm"></i>
+        <span data-i18n="nav.chatWa">Chat WA</span>
       </a>
     </div>
-  </nav>
-</header>
+
+    <button id="menu-btn" class="md:hidden relative z-50 inline-flex items-center justify-center h-10 w-10 rounded-lg border border-slate-200 text-slate-700 hover:bg-slate-100 transition-colors" aria-label="Menu">
+      <i id="menu-icon" class="ri-menu-line text-xl"></i>
+    </button>
+  </div>
+
+  <div id="mobile-menu" class="md:hidden fixed inset-0 z-40 bg-white/95 backdrop-blur-lg translate-x-full opacity-0 transition-all duration-300 ease-in-out">
+    <div class="flex flex-col items-center justify-center h-full gap-6 text-center">
+      <a href="#produk" class="text-2xl font-bold text-slate-800 hover:text-emerald-600 transition-colors" data-i18n="nav.produk">Produk</a>
+      <a href="#layanan" class="text-2xl font-bold text-slate-800 hover:text-emerald-600 transition-colors" data-i18n="nav.layanan">Layanan</a>
+      <a href="#brands" class="text-2xl font-bold text-slate-800 hover:text-emerald-600 transition-colors" data-i18n="nav.brands">Brands</a>
+      <a href="#kontak" class="text-2xl font-bold text-slate-800 hover:text-emerald-600 transition-colors" data-i18n="nav.kontak">Kontak</a>
+      <div class="h-px w-20 bg-slate-200 my-2"></div>
+      <button id="lang-toggle-mobile" class="inline-flex items-center gap-2 rounded-xl border border-slate-200 text-slate-700 px-6 py-3 text-xs font-extrabold hover:bg-emerald-50 hover:text-emerald-600 hover:border-emerald-200 transition-all">EN</button>
+      <a href="https://wa.me/6285738627984?text=Halo%20Admin%2C%20saya%20mau%20konsultasi%20rakit%20pc%20atau%20laptop%20baru%20bisa%3F" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-500 text-white text-base font-extrabold px-8 py-3.5 shadow-lg">
+        <i class="ri-whatsapp-fill text-lg"></i>
+        <span data-i18n="nav.chatWa">Chat WA</span>
+      </a>
+    </div>
+  </div>
+</nav>
